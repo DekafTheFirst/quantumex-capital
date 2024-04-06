@@ -1,5 +1,6 @@
 import React, { } from 'react'
 import { Link } from 'react-router-dom';
+import OptimizedImage from './OptimizedImage/OptimizedImage';
 
 
 
@@ -109,9 +110,8 @@ const Home = () => {
             <div className="col-xl-6 d-flex justify-content-center">
               <div className="header-image">
                 <div className="img-wrapper">
-                  <img src={require('../imgs/grace-medical/41.JPG')} alt="" />
                   {/* <LazyLoadImage src={require("../imgs/grace-medical/21.JPG")} effect='blur' /> */}
-                  {/* <ImageComponent src={require("../imgs/grace-medical/41.JPG")} /> */}
+                  <OptimizedImage src={require("../imgs/grace-medical/41.JPG")} blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu"/>
                 </div>
                 <div className="img-wrapper">
                   <img src={require('../imgs/grace-medical/20.JPG')} alt="" />

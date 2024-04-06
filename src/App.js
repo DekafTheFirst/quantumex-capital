@@ -1,5 +1,6 @@
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
@@ -19,7 +20,7 @@ function App() {
     <div className='app'>
     <HashRouter>
       <Navbar  />
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <div id="content">
           <Routes>
             <Route path="/" element={<Home />}/>

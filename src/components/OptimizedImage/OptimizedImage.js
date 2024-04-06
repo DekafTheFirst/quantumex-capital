@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Blurhash } from "react-blurhash";
-import "./OptimizedImage.scss"
+import "./OptimizedImage.css"
 
 
 const OptimizedImage = ({ src, blurhash, height, width, wrapperClassName, className, alt, effect }) => {
