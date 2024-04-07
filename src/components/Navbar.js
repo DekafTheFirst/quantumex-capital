@@ -53,7 +53,7 @@ const Navbar = () => {
           <a href="mailto:recipient@example.com" className='details'>dekeji1@gmail.com</a>
         </div>
       </div>
-      <div className="container-fluid my-auto">
+      <div className="container-fluid">
         <Link className="navbar-brand logo" to="/" onClick={() => setShow(false)}><img src={require("../imgs/logo.png")} alt="" /></Link>
         <button className="navbar-toggler" type="button" onClick={toggleShow}>
           <span className="navbar-toggler-icon my-navbar-toggler-icon"></span>
