@@ -36,7 +36,7 @@ const Home = () => {
           </div>
           
         </div>
-        <OptimizedImage src={require("../imgs/grace-medical/finance.jpg")} className="hero-img" alt="hero-img" blurhash="LcLEHB~pIUIU_4xvt7j@E2NHRjof" />
+        <OptimizedImage src={require("../imgs/grace-medical/finance.jpg")} className="hero-img"  alt="hero-img" blurhash="LcLEHB~pIUIU_4xvt7j@E2NHRjof" />
       </section>
 
       <section className="welcome mx-auto">

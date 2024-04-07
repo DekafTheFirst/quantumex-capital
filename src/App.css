@@ -366,6 +366,9 @@ section {
 
 
 /* Slider */
+.hero {
+    position: relative;
+}
 .hero .container {
     display: flex;
     flex-direction: column;
@@ -1151,7 +1154,7 @@ footer .page-btn:hover {
         width: 100vw;
         height: 100vh;
         object-fit: cover;
-        position: absolute;
+        position: absolute !important;
         z-index: -10;
         filter: brightness(45%);
     
@@ -1207,6 +1210,17 @@ footer .page-btn:hover {
     }
     
     .hero .hero-img {
+        width: 40% !important;
+        height: 95vh !important;
+        object-fit: cover;
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 80px;
+        position: absolute !important;
+        right: 0;
+        top: calc(var(--nav-height) + 20px);
+    }
+
+    .hero .hero-img-wrapper {
         width: 40%;
         height: 95vh;
         object-fit: cover;

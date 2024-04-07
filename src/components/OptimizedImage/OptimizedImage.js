@@ -40,6 +40,7 @@ const OptimizedImage = ({ src, blurhash, height, width, wrapperClassName, classN
                     height={height}
                     punch={1} 
                     className={`blurHash ${className}`}
+                    
                 />
             )}
         </>
