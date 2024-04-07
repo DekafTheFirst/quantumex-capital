@@ -1,14 +1,10 @@
-/* Navbar */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 *,
 *::after,
 *::before {
     box-sizing: border-box;
-    font-family: 'Helvetica';
-    font-family: "Open Sans", sans-serif;
+    font-family: "Urbanist", sans-serif;
     font-weight: 500;
 }
 
@@ -21,25 +17,27 @@ html {
 
 body {
     --cl--1--: #FFFFFF;
-    --cl--2--: #E2F2CF;
-    --cl--3--: #45A149;
-    --cl--4--: #155F18;
-    --cl--5--: #045C08;
+    --cl--2--: #fe753f;
+    --cl--3--: #e55d29;
+    --cl--4--: #08b2b4;
+    --cl--5--: #2e2e36;
+    
     --cl--6--: #000000;
     --cl--7--: #EEEEEE;
 
 
-    --nav-height: 60px;
+    --nav-height: 100px;
     background: var(--cl--1--);
     margin: 0;
 }
 
 .app {
     position: relative;
-    
+
 }
 
-img, canvas {
+img,
+canvas {
     max-width: 100%;
     width: 100%;
 }
@@ -154,30 +152,33 @@ section {
 
 
 .page-btn {
-    background-color: var(--cl--3--);
+    background-color: var(--cl--2--);
     color: var(--cl--1--);
-    padding: 10px 30px;
-    border-radius: 8px;
+    padding: 10px 25px;
+    vertical-align: middle;
+    border-radius: 5px;
     border: none;
 }
 
 .page-btn:hover {
-    background-color: var(--cl--4--);
+    background-color: #e55d29;
 }
 
 
 .page-btn-2 {
-    padding: 8px 32px;
+    border: 2px solid var(--cl--2--);
+    padding: 10px 25px;
     border-radius: 5px;
-    border: 2px solid var(--cl--4--);
     font-weight: 500;
-    color: var(--cl--4--);
-    margin-right: auto;
+    color: var(--cl--2--);
 }
 
+
 .page-btn-2:hover {
-    background: var(--cl--4--);
     color: var(--cl--1--);
+    background-color: var(--cl--2--);
+    border: 2px solid var(--cl--2--);
+    cursor: pointer;
 }
 
 .bg-green {
@@ -197,6 +198,35 @@ section {
     z-index: 100;
     padding: 0;
     height: var(--nav-height);
+    flex-direction: column;
+}
+
+.navbar .info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid var(--cl--7--);
+    margin-right: auto;
+    padding: 6px calc(1.5rem * .5);
+    gap: 5px;
+
+}
+
+.navabar .info.scrolled {
+    height: 0;
+    display: none;
+}
+
+
+.navbar .info .details{
+    color: var(--cl--1--);
+    font-size: 12px;
+}
+
+.navbar .info .icon{
+    color: var(--cl--2--);
+    margin-right: 3px;
 }
 
 
@@ -215,7 +245,7 @@ section {
 }
 
 .navbar .logo img {
-    width: 40px;
+    width: 150px;
 }
 
 
@@ -283,14 +313,44 @@ section {
 
 
 .navbar .nav-link {
-    padding: 3px;
+    padding: 0 2px;
     font-size: 15px;
     font-weight: 500;
-
+    color: var(--cl--1--);
+    border-bottom: 2px solid transparent;
 }
 
+.navbar .nav-item-special {
+    padding: 3px 20px;
+    border: 2px solid var(--cl--2--);
+    border-radius: 5px;
+}
+.navbar .nav-item-special:hover {
+    background-color: var(--cl--2--);
+    cursor: pointer;
+}
+
+.navbar .nav-item-special .nav-link {
+    color: var(--cl--2--);
+
+    
+}
+
+
+.navbar .nav-item-special:hover .nav-link, .navbar .nav-item-special .nav-link.active {
+    color: var(--cl--1--);
+}
+
+
+
 .navbar .nav-link.active,
-.navbar .nav-link:hover {}
+.navbar .nav-link:hover {
+    color: var(--cl--2--);
+}
+
+.navbar .nav-link.active {
+    border-bottom: 2px solid var(--cl--3--);
+}
 
 .navbar .nav-item {
     display: flex;
@@ -306,26 +366,23 @@ section {
 
 
 /* Slider */
-.hero {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("./imgs/grace-medical/10.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.hero .container {
     display: flex;
-    align-items: center;
-    margin-top: 0;
+    flex-direction: column;
 }
 
 .hero .hero-content {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 700px;
+    max-width: 50%;
+}
+
+.hero-content .text * {
+    color: var(--cl--1--);
 }
 
 .hero .hero-content h1 {
-    font-family: "Libre Baskerville", serif;
     font-weight: 700;
     font-style: normal;
 }
@@ -335,15 +392,45 @@ section {
 }
 
 
-.hero .hero-content a {
-    margin-right: auto;
+.hero .hero-content .buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
+.hero .hero-content .buttons .page-btn{
+    border: 2px solid var(--cl--2--);
+}
 
-
-.hero * {
+.hero .hero-content .buttons .page-btn-2{
+    border: 2px solid var(--cl--1--);
     color: var(--cl--1--);
+
 }
+
+.hero .hero-content .buttons .page-btn-2:hover{
+    background: var(--cl--1--);
+}
+
+.hero .hero-content .buttons .page-btn-2:hover,
+.hero .hero-content .buttons .page-btn-2:hover .page-btn-2-icon{
+    color: var(--cl--6--);
+}
+
+
+
+.hero .hero-content .buttons .page-btn, 
+.hero .hero-content .buttons .page-btn-2 {
+    display: flex;
+    align-items: center;
+}
+
+.hero .hero-content .buttons .page-btn-2-icon{
+    margin-left: 15px;
+}
+
+
+
 
 
 /* Header */
@@ -413,7 +500,8 @@ section {
     flex-direction: column;
 }
 
-.home-about-us .content img, .home-about-us .content .wrapper{
+.home-about-us .content img,
+.home-about-us .content .wrapper {
     width: 100%;
     border-radius: 3px;
 }
@@ -439,10 +527,10 @@ section {
     width: 90%;
 }
 
-.home-about-us .header-image img, 
+.home-about-us .header-image img,
 .home-about-us .header-image canvas {
     height: 100%;
-    border-radius: 8px;   
+    border-radius: 8px;
 }
 
 .home-about-us .header-image .img-wrapper:first-child {
@@ -759,7 +847,7 @@ section {
 }
 
 
-.give .content{
+.give .content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -769,7 +857,7 @@ section {
 
 }
 
-.give .content *{
+.give .content * {
     color: var(--cl--1--);
     text-align: center;
 }
@@ -1006,15 +1094,23 @@ footer .page-btn:hover {
 
 }
 
+@media screen and (max-width: 567px) { 
+    .navbar {
+        height: 120px;
+    }
+ }
 
-@media screen and (min-width: 567px) {
+@media screen and (min-width: 567px) {   
     .container-fluid {
         padding: 0;
         width: 80%;
         max-width: 1200px;
     }
 
-
+    .navbar .info {
+        padding: 6px 10%;
+        gap: 15px;
+    }
 
 
 
@@ -1032,26 +1128,37 @@ footer .page-btn:hover {
         top: 0;
         left: 0;
         padding: 15px;
-        
+
         height: 100vh;
         width: 45vw;
         background-color: #1A1A1A;
         transition: all 0.5s ease-in;
     }
 
-    .navbar  .give-btn{
-        margin-top: 20px;
-        border: 2px solid var(--cl--3--);
-        padding: 3px 20px;
-        border-radius: 5px;
-        font-weight: 500;
+    .hero {
+        height: 100vh;
+        /* background: #2e2e36; */
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
-        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+    
+    .hero .hero-img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        z-index: -10;
+        filter: brightness(45%);
+    
     }
 
-    .navbar  .give-btn .nav-link{
-        color: var(--cl--3--);
-        text-align: center;
+    .navbar .nav-item-special {
+        margin-top: 20px;
     }
 
     .give .banner {
@@ -1064,7 +1171,9 @@ footer .page-btn:hover {
         width: 90%;
     }
 
-    
+    .navbar .nav-link {
+        padding: 0 3px !important;
+    }
 
     .navbar .navbar-collapse {
         position: static;
@@ -1074,48 +1183,39 @@ footer .page-btn:hover {
 
     }
 
-    .navbar .give-btn {
-        border: 2px solid var(--cl--3--);
-        padding: 3px 20px;
-        border-radius: 5px;
-        font-weight: 500;
-
+    .nav-item-special {
+        margin-left: auto;
     }
-
-
-
-    .navbar .give-btn .nav-link {
-        color: var(--cl--3--);
-    }
-
-
-
-
-
-    .navbar .give-btn:hover {
-        background-color: var(--cl--3--);
-        border: 2px solid var(--cl--3--);
-        cursor: pointer;
-    }
-
-    .navbar .give-btn:hover .nav-link {
-        color: var(--cl--1--);
-        font-weight: 500;
-    }
-
-
-
-
 
 
 
     .navbar .navbar-collapse .navbar-nav {
-        gap: 10px;
-
+        gap: 25px;
+        margin-left: 60px;
     }
 
 
-
+    .hero {
+        height: 100vh;
+        background: var(--cl--5--);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+    }
+    
+    .hero .hero-img {
+        width: 40%;
+        height: 95vh;
+        object-fit: cover;
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 80px;
+        position: absolute;
+        right: 0;
+        top: calc(var(--nav-height) + 20px);
+    }
 
 
 

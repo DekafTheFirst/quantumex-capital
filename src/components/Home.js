@@ -1,7 +1,7 @@
 import React, { } from 'react'
 import { Link } from 'react-router-dom';
 import OptimizedImage from './OptimizedImage/OptimizedImage';
-
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 
 
@@ -17,21 +17,26 @@ const Home = () => {
       <section className="hero">
         <div className="container-fluid">
           <div className="hero-content">
-            <h1>
-              High-quality
-              medical care with a
-              compassionate touch.
-            </h1>
-            <p>
-              Extending healing hands to those in
-              need, providing not just medical care
-              but also the love and hope that come
-              from our faith.
-            </p>
-            <Link to="/about-us" className='page-btn'>Learn More</Link>
-          </div>
-        </div>
+            <div className="text">
+              <h1>
+                Quantumex Financial Institution
+              </h1>
+              <p>
+                Extending healing hands to those in
+                need, providing not just medical care
+                but also the love and hope that come
+                from our faith.
+              </p>
+            </div>
 
+            <div className="buttons">
+              <Link to="/about-us" className='page-btn'>Learn More <ArrowForwardIcon fontSize='21' className='page-btn-2-icon' /></Link>
+              <Link to="/contact" className='page-btn-2'>Get In Touch <ArrowForwardIcon fontSize='21' className='page-btn-2-icon' /> </Link>
+            </div>
+          </div>
+          
+        </div>
+        <OptimizedImage src={require("../imgs/grace-medical/finance.jpg")} className="hero-img" alt="hero-img" blurhash="LcLEHB~pIUIU_4xvt7j@E2NHRjof" />
       </section>
 
       <section className="welcome mx-auto">
@@ -47,6 +52,7 @@ const Home = () => {
             from our faith.
           </p>
         </div>
+
       </section>
 
 
@@ -111,7 +117,7 @@ const Home = () => {
               <div className="header-image">
                 <div className="img-wrapper">
                   {/* <LazyLoadImage src={require("../imgs/grace-medical/21.JPG")} effect='blur' /> */}
-                  <OptimizedImage src={require("../imgs/grace-medical/41.JPG")} blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu"/>
+                  <OptimizedImage src={require("../imgs/grace-medical/41.JPG")} blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" />
                 </div>
                 <div className="img-wrapper">
                   <img src={require('../imgs/grace-medical/20.JPG')} alt="" />

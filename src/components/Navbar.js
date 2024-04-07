@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import Home from './Home';
+import PlaceIcon from '@mui/icons-material/Place';
+import { Email } from '@mui/icons-material';
 
 const routes = [
   { name: "home", path: "/", component: <Home /> }
@@ -40,14 +42,24 @@ const Navbar = () => {
   }
 
   return (
-    <nav className={`navbar navbar-expand-md fixed-top ${scrolled ? 'scrolled bg-dark navbar-dark': 'navbar-dark'}`}>
-      <div className="container-fluid">
-        <Link className="navbar-brand logo" to="/" onClick={() => setShow(false)}><img src={require("../imgs/grace-medical/g-icon.png")} alt="" /></Link>
+    <nav className={`navbar navbar-expand-md fixed-top navbar-dark ${scrolled ? 'scrolled bg-dark': ''}`}>
+      <div className={`info ${scrolled ? 'scrolled':''}`}>
+        <div className="item">
+          <PlaceIcon className='icon' />
+          <span className='details'>Ralph Shodeinde Street, Central Business District.</span>
+        </div>
+        <div className="item">
+          <Email className='icon' />
+          <a href="mailto:recipient@example.com" className='details'>dekeji1@gmail.com</a>
+        </div>
+      </div>
+      <div className="container-fluid my-auto">
+        <Link className="navbar-brand logo" to="/" onClick={() => setShow(false)}><img src={require("../imgs/logo.png")} alt="" /></Link>
         <button className="navbar-toggler" type="button" onClick={toggleShow}>
           <span className="navbar-toggler-icon my-navbar-toggler-icon"></span>
         </button>
         <div className={`collapse navbar-collapse ${show ? 'show' : ''}`} id="navbarNav">
-          <ul className="navbar-nav mx-auto">
+          <ul className="navbar-nav">
             <li className="nav-item">
               <NavLink to="/" className="nav-link" onClick={() => { setShow(false) }}>Home</NavLink>
             </li>
@@ -68,8 +80,8 @@ const Navbar = () => {
             </li>
 
           </ul>
-          <li className="nav-item give-btn">
-            <NavLink className="nav-link" to="/give" onClick={() => { setShow(false) }}>Give</NavLink>
+          <li className="nav-item nav-item-special ">
+            <NavLink className="nav-link " to="/give" onClick={() => { setShow(false) }}>Give</NavLink>
           </li>
         </div>
 
