@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Blurhash } from "react-blurhash";
 import "./OptimizedImage.css"
 
 
-const OptimizedImage = ({ src, blurhash, height, width, wrapperClassName, className, alt, effect }) => {
+const OptimizedImage = ({ src, blurhash, height, width, wrapperClassName, className, alt, effect, style }) => {
 
     const [isLoaded, setLoaded] = useState(false);
     const [isLoadStarted, setLoadStarted] = useState(false);
@@ -19,16 +19,26 @@ const OptimizedImage = ({ src, blurhash, height, width, wrapperClassName, classN
         setLoadStarted(true);
     };
 
+    // useEffect(() => {
+    //     const img = new Image();
+    //     img.src = src;
+    //     img.onload = () => {
+    //         const aspectRatio = img.width / img.height;
+    //         setImageWidth(width);
+    //         setImageHeight(width / aspectRatio);
+    //     };
+    // }, [src, width]);
+
     return (
-        <>
+        < div className={`optimized-image-wrapper ${className}`} style={style}>
             <LazyLoadImage
                 wrapperClassName={wrapperClassName}
-                className={className}
+                style={{objectFit:'cover', overflow:'hidden'}}
                 alt={alt}
                 src={src}
                 effect={effect}
-                height={height}
-                width={width}
+                height={'100%'}
+                width={'100%'}
                 onLoad={handleLoad}
                 beforeLoad={handleLoadStarted}
             />
@@ -36,14 +46,13 @@ const OptimizedImage = ({ src, blurhash, height, width, wrapperClassName, classN
             {!isLoaded && isLoadStarted && (
                 <Blurhash
                     hash={blurhash}
-                    width={width}
-                    height={height}
-                    punch={1} 
-                    className={`blurHash ${className}`}
-                    
+                    width={'100%'}
+                    height={'100%'}
+                    punch={1}
+                    className={`blurHash`}
                 />
             )}
-        </>
+        </div>
 
 
     )

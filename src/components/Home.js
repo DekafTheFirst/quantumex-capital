@@ -34,14 +34,16 @@ const Home = () => {
               <Link to="/contact" className='page-btn-2'>Get In Touch <ArrowForwardIcon fontSize='21' className='page-btn-2-icon' /> </Link>
             </div>
           </div>
-          
+
         </div>
-        <OptimizedImage src={require("../imgs/grace-medical/finance.jpg")} className="hero-img"  alt="hero-img" blurhash="LcLEHB~pIUIU_4xvt7j@E2NHRjof" />
+        <OptimizedImage src={require("../imgs/grace-medical/finance.jpg")} className="hero-img" alt="hero-img" blurhash="LcLEHB~pIUIU_4xvt7j@E2NHRjof" />
       </section>
 
       <section className="welcome mx-auto">
         <div className="container-fluid">
-          <h1><span>Welcome To</span>Grace Medical Outreach International</h1>
+          <OptimizedImage src={require("../imgs/grace-medical/finance.jpg")} style={{height: 250, width:200}} alt="hero-img" blurhash="LcLEHB~pIUIU_4xvt7j@E2NHRjof" />
+
+          <h1 ><span>Welcome To</span>Grace Medical Outreach International</h1>
           <p>
             we believe in the transformative
             power of compassionate healthcare
