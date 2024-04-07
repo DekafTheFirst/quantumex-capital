@@ -375,7 +375,6 @@ section {
 .hero {
     height: 100vh;
     position: relative;
-
 }
 
 .hero .hero-img {
@@ -1187,7 +1186,8 @@ footer .page-btn:hover {
         background-color: #1A1A1A;
         transition: left 0.5s ease;
     }
-    .navbar .collapse:not(.show){
+
+    .navbar .collapse:not(.show) {
         display: block !important;
     }
 
@@ -1198,8 +1198,6 @@ footer .page-btn:hover {
 
 
     .hero {
-        /* background: #2e2e36; */
-
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1265,7 +1263,7 @@ footer .page-btn:hover {
     }
 
 
-    .hero .hero-img-wrapper {
+    /* .hero .hero-img-wrapper {
         width: 40%;
         height: 95vh;
         object-fit: cover;
@@ -1274,7 +1272,7 @@ footer .page-btn:hover {
         position: absolute;
         right: 0;
         top: calc(var(--nav-height) + 20px);
-    }
+    } */
 
 
 
@@ -1322,6 +1320,19 @@ footer .page-btn:hover {
     .hero {
         height: 100vh;
         background: var(--cl--5--);
+
+    }
+
+    .hero .dotted {
+        background-image: radial-gradient(var(--cl--3--) 2px, transparent 1px);
+        background-size: 20px 20px;
+        /* Adjust to control the spacing between dots */
+        width: 100px;
+        height: 200px;
+        position: absolute;
+        top: 45%;
+        right: 40%;
+        background-repeat: repeat;
 
     }
 

@@ -22,10 +22,7 @@ const Home = () => {
                 Quantumex Financial Institution
               </h1>
               <p>
-                Extending healing hands to those in
-                need, providing not just medical care
-                but also the love and hope that come
-                from our faith.
+                Step into a world of financial empowerment with our dynamic website, where we blend cutting-edge technology with tailored financial solutions to unlock your true wealth potential.
               </p>
             </div>
 
@@ -36,6 +33,7 @@ const Home = () => {
           </div>
 
         </div>
+        <div className="dotted"></div>
         <OptimizedImage src={require("../imgs/grace-medical/finance.jpg")} className="hero-img" alt="hero-img" blurhash="LcLEHB~pIUIU_4xvt7j@E2NHRjof" />
       </section>
 
