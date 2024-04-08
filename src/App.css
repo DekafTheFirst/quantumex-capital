@@ -401,14 +401,14 @@ section {
 .hero .container-fluid {
     display: flex;
     flex-direction: column;
-    padding-top: var(--nav-height);
+    padding-top: calc(var(--nav-height)/2);
     z-index: 30;
 }
 
 .hero .hero-content {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 30px;
     max-width: 100%;
 }
 
@@ -423,6 +423,7 @@ section {
 }
 
 .hero .hero-content p {
+    font-size: 18px;
     font-weight: normal;
     color: var(--cl--1--);
     opacity: 1;
@@ -449,12 +450,11 @@ section {
 
 .hero .hero-content h1,
 .hero .hero-content p,
-.hero .hero-content .buttons
-{
+.hero .hero-content .buttons {
     transform: translateX(-30px);
     filter: blur(20px);
     opacity: 0;
-    animation: showContent 1.5s ease-out 1 forwards;
+    animation: showContent 1s ease-out 1 forwards;
 }
 
 .hero .hero-content h1 {
@@ -503,12 +503,15 @@ section {
     align-items: center;
 }
 
-.hero .hero-content .buttons .page-btn-2-icon {
-    margin-left: 15px;
+.hero .hero-content .buttons .icon {
+    margin-left: 10px;
 }
 
 
 
+.hero .hero-content .buttons .page-btn-2 .icon {
+    rotate: -45deg;
+}
 
 
 /* Header */
@@ -1248,6 +1251,17 @@ footer .page-btn:hover {
         left: 0;
     }
 
+    .navbar .navbar-nav .nav-item .nav-link {
+        width: 100%;
+        text-align: center;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .navbar .navbar-nav .nav-item .nav-link.active {
+        background: var(--cl--2--);
+        color: var(--cl--6--);
+    }
 
 
     .hero {
@@ -1311,8 +1325,13 @@ footer .page-btn:hover {
         margin-top: 0;
     }
 
+    .hero .container-fluid {
+        padding-top: calc(var(--nav-height)/2);
+    }
+
     .hero .hero-content {
         max-width: 80%;
+        gap: 15px;
     }
 
 
@@ -1361,7 +1380,15 @@ footer .page-btn:hover {
     }
 
 }
+@media screen and (max-width: 991px) and (orientation: landscape) {
+    .hero {
+        height: 100vh;
+    }
 
+    .hero-content h1 {
+        font-size: 40px;
+    }
+}
 @media screen and (min-width: 992px) {
     .hero .hero-content {
         max-width: 80%;
@@ -1384,22 +1411,24 @@ footer .page-btn:hover {
         pointer-events: none;
         /* Allow clicks to pass through to the content below */
         transition: padding-top .3s ease-in;
-    
+
     }
-    
+
     .overlay.scrolled {
         padding-top: 0;
     }
-    
-    .line-svg, .line-svg-2 {
+
+    .line-svg,
+    .line-svg-2 {
         overflow: visible;
-        
+
     }
+
     .line-svg {
         margin-left: 8%;
 
     }
-    
+
     .line-svg-2 {
         margin-left: 40%;
     }

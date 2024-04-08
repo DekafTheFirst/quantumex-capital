@@ -43,8 +43,8 @@ const Home = ({scrolled}) => {
             </p>
 
             <div className="buttons">
-              <Link to="/about-us" className='page-btn'>Learn More <ArrowForwardIcon fontSize='21' className='page-btn-2-icon' /></Link>
-              <Link to="/contact" className='page-btn-2'>Get In Touch <ArrowForwardIcon fontSize='21' className='page-btn-2-icon' /> </Link>
+              <Link to="/about-us" className='page-btn'>Learn More <ArrowForwardIcon fontSize='21' className='icon' /></Link>
+              <Link to="/contact" className='page-btn-2'>Get In Touch <ArrowForwardIcon fontSize='21' className='icon' /> </Link>
             </div>
           </div>
 

@@ -18,6 +18,22 @@ const Navbar = ({ scrolled }) => {
     setShow(!show)
   }
 
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (!event.target.closest('.navbar')) {
+        setShow(false); // Close the navbar if clicked outside
+      }
+    };
+
+    // Add event listener when component mounts
+    document.addEventListener('click', handleOutsideClick);
+
+    // Remove event listener when component unmounts
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, []);
+
   return (
     <nav className={`navbar navbar-expand-md fixed-top navbar-dark ${scrolled ? 'scrolled bg-dark' : ''}`}>
       {/* <div className={`info ${scrolled ? 'scrolled' : ''}`}>
