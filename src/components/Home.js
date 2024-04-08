@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import OptimizedImage from './OptimizedImage/OptimizedImage';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
-
+import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
 
 // import required modules
 // import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
@@ -119,23 +119,40 @@ const Home = ({ scrolled }) => {
 
       <section className='reputation'>
         <div className="container-fluid">
-          <div className="row ">
-            <div className="col-md-4">
+          <div className="row">
+            <div className="col col-md-4 left">
               <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero animi,</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero animi, voluptatum nostrum dolore rem nihil minima aperiam modi excepturi pariatur placeat, hic voluptate itaque deleniti cupiditate velit quae reiciendis.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero animi, voluptatum nostrum dolore rem nihil minima aperiam modi excepturi pariatur placeat</p>
+              <div className="bottom mt-auto">
+                <span>DESTINY KEFAS</span>
+                <span>CEO, Founder.</span>
+              </div>
             </div>
             <div className="col-md-8">
               <div className="row cards">
-                <div className="reputation-card">
-                  {/* <OptimizedImage src={require("../imgs/grace-medical/2.JPG")} className="img" blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" /> */}
+                <div to="" className="col-md-6 reputation-card">
+                  <OptimizedImage src={require("../imgs/grace-medical/2.JPG")} className="img" blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" />
                   <h5>Helping Hand</h5>
                   <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut expedita
                   </p>
+                  <Link to="">
+                    <ChevronRightRoundedIcon fontSize='medium' className='icon' />
+                  </Link>
 
-                  <Link to="/projects"> join us &#8594;</Link>
                 </div>
 
+                <div to="" className="col-md-6 reputation-card">
+                  <OptimizedImage src={require("../imgs/grace-medical/2.JPG")} className="img" blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" />
+                  <h5>Helping Hand</h5>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut expedita
+                  </p>
+                  <Link to="">
+                    <ChevronRightRoundedIcon fontSize='medium' className='icon' />
+                  </Link>
+
+                </div>
 
               </div>
 
