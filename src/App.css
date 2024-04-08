@@ -107,7 +107,7 @@ ul {
 
 
 .banner {
-    height: 25vh;
+    height: 30vh;
     background-position: center;
     display: flex;
     justify-content: center;
@@ -214,15 +214,15 @@ section {
     height: var(--nav-height);
 }
 
-.navbar .info {
+/* .navbar .info {
     display: none;
-}
+} */
 
 
 
 
 
-.navbar .info .details {
+/* .navbar .info .details {
     color: var(--cl--1--);
     font-size: 12px;
 }
@@ -230,7 +230,7 @@ section {
 .navbar .info .icon {
     color: var(--cl--2--);
     margin-right: 3px;
-}
+} */
 
 
 .navbar * {
@@ -402,6 +402,7 @@ section {
     display: flex;
     flex-direction: column;
     padding-top: var(--nav-height);
+    z-index: 30;
 }
 
 .hero .hero-content {
@@ -416,22 +417,60 @@ section {
     font-weight: 700;
     font-style: normal;
     color: var(--cl--1--);
+    opacity: 1;
+    z-index: 10;
 
 }
 
 .hero .hero-content p {
     font-weight: normal;
     color: var(--cl--1--);
-
+    opacity: 1;
+    z-index: 10;
 }
-
 
 .hero .hero-content .buttons {
     display: flex;
     gap: 10px;
     align-items: center;
     flex-wrap: wrap;
+    opacity: 1;
+    z-index: 10;
 }
+
+@keyframes showContent {
+    to {
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+
+.hero .hero-content h1,
+.hero .hero-content p,
+.hero .hero-content .buttons
+{
+    transform: translateX(-30px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 1.5s ease-out 1 forwards;
+}
+
+.hero .hero-content h1 {
+    animation-delay: 0.0s;
+}
+
+.hero .hero-content p {
+    animation-delay: 0.5s;
+}
+
+.hero .hero-content .buttons {
+    animation-delay: 1.0s;
+}
+
+
+
 
 
 
@@ -1147,7 +1186,7 @@ footer .page-btn:hover {
 
 
 
-    .navbar .info {
+    /* .navbar .info {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
@@ -1176,7 +1215,7 @@ footer .page-btn:hover {
 
     .navbar .info.scrolled {
         transform: translateY(-100%);
-    }
+    } */
 
     .hero {
         height: 60vh;
@@ -1332,11 +1371,12 @@ footer .page-btn:hover {
 @media screen and (min-width: 1200px) {
     .overlay {
         display: flex;
-        padding-top: var(--nav-info-height);
         position: absolute;
-        left: 8%;
         top: 0;
-        width: 50%;
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
         /* Adjust the width as needed */
         z-index: 10;
         height: 100%;
@@ -1355,9 +1395,13 @@ footer .page-btn:hover {
         overflow: visible;
         
     }
+    .line-svg {
+        margin-left: 8%;
+
+    }
     
     .line-svg-2 {
-        margin-left: 70%;
+        margin-left: 40%;
     }
 
     .hero {

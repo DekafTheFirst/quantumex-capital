@@ -20,7 +20,7 @@ const Navbar = ({ scrolled }) => {
 
   return (
     <nav className={`navbar navbar-expand-md fixed-top navbar-dark ${scrolled ? 'scrolled bg-dark' : ''}`}>
-      <div className={`info ${scrolled ? 'scrolled' : ''}`}>
+      {/* <div className={`info ${scrolled ? 'scrolled' : ''}`}>
         <div className="item">
           <PlaceIcon className='icon' />
           <span className='details'>Ralph Shodeinde Street, Central Business District.</span>
@@ -29,7 +29,7 @@ const Navbar = ({ scrolled }) => {
           <Email className='icon' />
           <a href="mailto:recipient@example.com" className='details'>dekeji1@gmail.com</a>
         </div>
-      </div>
+      </div> */}
       <div className="container-fluid">
         <Link className="navbar-brand logo" to="/" onClick={() => setShow(false)}><img src={require("../imgs/logo.png")} alt="" /></Link>
         <button className="navbar-toggler" type="button" onClick={toggleShow}>
