@@ -368,33 +368,7 @@ section {
 
 /* Home */
 .overlay {
-    display: flex;
-    padding-top: var(--nav-info-height);
-    position: absolute;
-    left: 8%;
-    top: 0;
-    width: 50%;
-    /* Adjust the width as needed */
-    z-index: 10;
-    height: 100%;
-    /* Cover the entire height of the viewport */
-    pointer-events: none;
-    /* Allow clicks to pass through to the content below */
-    transition: padding-top .3s ease-in;
-
-}
-
-.overlay.scrolled {
-    padding-top: 0;
-}
-
-.line-svg, .line-svg-2 {
-    overflow: visible;
-    
-}
-
-.line-svg-2 {
-    margin-left: 70%;
+    display: none;
 }
 
 
@@ -1284,7 +1258,7 @@ footer .page-btn:hover {
 
     .navbar .navbar-collapse .navbar-nav {
         gap: 25px;
-        margin-left: 60px;
+        margin-left: 30px;
     }
 
 
@@ -1356,6 +1330,35 @@ footer .page-btn:hover {
 }
 
 @media screen and (min-width: 1200px) {
+    .overlay {
+        display: flex;
+        padding-top: var(--nav-info-height);
+        position: absolute;
+        left: 8%;
+        top: 0;
+        width: 50%;
+        /* Adjust the width as needed */
+        z-index: 10;
+        height: 100%;
+        /* Cover the entire height of the viewport */
+        pointer-events: none;
+        /* Allow clicks to pass through to the content below */
+        transition: padding-top .3s ease-in;
+    
+    }
+    
+    .overlay.scrolled {
+        padding-top: 0;
+    }
+    
+    .line-svg, .line-svg-2 {
+        overflow: visible;
+        
+    }
+    
+    .line-svg-2 {
+        margin-left: 70%;
+    }
 
     .hero {
         height: 100vh;
