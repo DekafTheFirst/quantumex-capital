@@ -117,55 +117,31 @@ const Home = ({ scrolled }) => {
       </section> */}
 
 
-      <section className='reputation bg-green'>
+      <section className='reputation'>
         <div className="container-fluid">
-          <div className="row cards">
-            <div className="card reputation-card">
-              <img src={require("../imgs/grace-medical/helping-hand.png")} alt="" />
-              <h5>Helping Hand</h5>
-              <p>
-                In the spirit of Christian
-                service, we see ourselves as
-                a compassionate extension
-                of God's love, reaching out
-                to those who require both
-                physical and spiritual
-                healing.
-              </p>
+          <div className="row ">
+            <div className="col-md-4">
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero animi,</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero animi, voluptatum nostrum dolore rem nihil minima aperiam modi excepturi pariatur placeat, hic voluptate itaque deleniti cupiditate velit quae reiciendis.</p>
+            </div>
+            <div className="col-md-8">
+              <div className="row cards">
+                <div className="reputation-card">
+                  {/* <OptimizedImage src={require("../imgs/grace-medical/2.JPG")} className="img" blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" /> */}
+                  <h5>Helping Hand</h5>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut expedita
+                  </p>
 
-              <Link to="/projects"> join us &#8594;</Link>
-            </div>
-            <div className="card reputation-card">
-              <img src={require("../imgs/grace-medical/healing-touch.png")} alt="" />
-              <h5>Healing Touch</h5>
-              <p>
-                With a focus on both
-                physical and spiritual
-                well-being, we strive to
-                provide comfort, warmth,
-                and a sense of renewal,
-                fostering hope and
-                wholeness in the lives we
-                touch.
-              </p>
+                  <Link to="/projects"> join us &#8594;</Link>
+                </div>
 
-              <Link to="/projects"> join us &#8594;</Link>
+
+              </div>
+
+
             </div>
-            <div className="card reputation-card">
-              <img src={require("../imgs/grace-medical/share-christ.png")} alt="" />
-              <h5>Sharing Christ</h5>
-              <p>
-                we are more than healers;
-                we are messengers of hope.
-                Through our work, we share
-                the transformative love of
-                Jesus Christ, bringing
-                comfort, compassion, and
-                the message of faith to all
-                we serve.
-              </p>
-              <Link to="/projects"> join us &#8594;</Link>
-            </div>
+
           </div>
         </div>
       </section>
