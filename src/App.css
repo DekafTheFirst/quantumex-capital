@@ -27,6 +27,7 @@ body {
 
 
     --nav-height: 70px;
+    --nav-info-height: 40px;
     background: var(--cl--1--);
     margin: 0;
 }
@@ -55,7 +56,7 @@ h6 {
 }
 
 h1 {
-    font-size: clamp(30px, 10vw, 50px);
+    font-size: clamp(40px, 10vw, 60px);
 }
 
 h2 {
@@ -365,13 +366,49 @@ section {
 
 
 
+/* Home */
+.overlay {
+    display: flex;
+    padding-top: var(--nav-info-height);
+    position: absolute;
+    left: 8%;
+    top: 0;
+    width: 50%;
+    /* Adjust the width as needed */
+    z-index: 10;
+    height: 100%;
+    /* Cover the entire height of the viewport */
+    pointer-events: none;
+    /* Allow clicks to pass through to the content below */
+    transition: padding-top .3s ease-in;
+
+}
+
+.overlay.scrolled {
+    padding-top: 0;
+}
+
+.line-svg, .line-svg-2 {
+    overflow: visible;
+    
+}
+
+.line-svg-2 {
+    margin-left: 70%;
+}
 
 
 
 
+/* Additional styling for the dots if needed */
+.circle {
+    fill: black;
+}
 
 
-/* Slider */
+
+
+/* Hero */
 .hero {
     height: 100vh;
     position: relative;
@@ -400,17 +437,18 @@ section {
     max-width: 100%;
 }
 
-.hero-content .text * {
-    color: var(--cl--1--);
-}
 
 .hero .hero-content h1 {
     font-weight: 700;
     font-style: normal;
+    color: var(--cl--1--);
+
 }
 
 .hero .hero-content p {
     font-weight: normal;
+    color: var(--cl--1--);
+
 }
 
 
@@ -461,6 +499,8 @@ section {
 
 
 /* Header */
+
+
 
 .welcome {
     max-width: 1300px;
@@ -1151,7 +1191,7 @@ footer .page-btn:hover {
     }
 
     .navbar .container-fluid {
-        margin-top: 40px;
+        margin-top: var(--nav-info-height);
         height: var(--nav-height);
         transition: margin-top .3s ease-in;
     }

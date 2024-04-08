@@ -9,22 +9,38 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 // import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
 // import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-const Home = () => {
+const Home = ({scrolled}) => {
   // const swiperRef = useRef(null);
 
   return (
     <div className='home'>
+
       <section className="hero">
+        <div class={`overlay ${scrolled ? 'scrolled':''}`}>
+          <svg width="100" height="100%" class="line-svg">
+            <line x1="0" y1="0" x2="0" y2="100%" stroke="lightGray" stroke-width="0.5" />
+
+            <circle cx="0" cy="100" r="4" fill="#08b2b4" />
+            <circle cx="0" cy="500" r="4" fill="#08b2b4" />
+            
+
+          </svg>
+          <svg width="100" height="100%" class="line-svg-2">
+            <line x1="0" y1="0" x2="0" y2="100%" stroke="lightGray" stroke-width="0.5" />
+
+            <circle cx="0" cy="200" r="4" fill="#08b2b4" />
+            <circle cx="0" cy="600" r="4" fill="#08b2b4" />
+
+          </svg>
+        </div>
         <div className="container-fluid">
           <div className="hero-content">
-            <div className="text">
-              <h1>
-                Quantumex Financial Institution
-              </h1>
-              <p>
-                Step into a world of financial empowerment with our dynamic website, where we blend cutting-edge technology with tailored financial solutions to unlock your true wealth potential.
-              </p>
-            </div>
+            <h1>
+              Quantumex Financial Institution
+            </h1>
+            <p>
+              Step into a world of financial empowerment with our dynamic website, where we blend cutting-edge technology with tailored financial solutions to unlock your true wealth potential.
+            </p>
 
             <div className="buttons">
               <Link to="/about-us" className='page-btn'>Learn More <ArrowForwardIcon fontSize='21' className='page-btn-2-icon' /></Link>
@@ -39,7 +55,7 @@ const Home = () => {
 
       <section className="welcome mx-auto">
         <div className="container-fluid">
-          <OptimizedImage src={require("../imgs/grace-medical/finance.jpg")} style={{height: 250, width:200}} alt="hero-img" blurhash="LcLEHB~pIUIU_4xvt7j@E2NHRjof" />
+          <OptimizedImage src={require("../imgs/grace-medical/finance.jpg")} style={{ height: 250, width: 200 }} alt="hero-img" blurhash="LcLEHB~pIUIU_4xvt7j@E2NHRjof" />
 
           <h1 ><span>Welcome To</span>Grace Medical Outreach International</h1>
           <p>

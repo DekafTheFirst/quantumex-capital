@@ -9,41 +9,18 @@ const routes = [
 ]
 
 
-const Navbar = () => {
+const Navbar = ({ scrolled }) => {
   const [dropdownClicked, setDropDownClicked] = useState(false);
   const [show, setShow] = useState(false);
-  const [scrolled, setScrolled] = useState(false)
-
-
-  useEffect(() => {
-    // Listen for scroll events
-    const handleScroll = () => {
-      // Check the scroll position
-      if (window.scrollY > 70) { // Change 100 to the desired scroll position
-        // Update the state to indicate that the user has scrolled
-        setScrolled(true);
-      } else {
-        // Update the state to indicate that the user hasn't scrolled
-        setScrolled(false);
-      }
-    };
-
-    // Add the scroll event listener when the component mounts
-    window.addEventListener('scroll', handleScroll);
-
-    // Clean up by removing the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  
 
   const toggleShow = () => {
     setShow(!show)
   }
 
   return (
-    <nav className={`navbar navbar-expand-md fixed-top navbar-dark ${scrolled ? 'scrolled bg-dark': ''}`}>
-      <div className={`info ${scrolled ? 'scrolled':''}`}>
+    <nav className={`navbar navbar-expand-md fixed-top navbar-dark ${scrolled ? 'scrolled bg-dark' : ''}`}>
+      <div className={`info ${scrolled ? 'scrolled' : ''}`}>
         <div className="item">
           <PlaceIcon className='icon' />
           <span className='details'>Ralph Shodeinde Street, Central Business District.</span>
@@ -75,13 +52,11 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink className="nav-link" to="/projects" onClick={() => { setShow(false) }}>Projects</NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/contact" onClick={() => { setShow(false) }}>Contact</NavLink>
-            </li>
+
 
           </ul>
-          <li className="nav-item nav-item-special ">
-            <NavLink className="nav-link " to="/give" onClick={() => { setShow(false) }}>Give</NavLink>
+          <li className="nav-item nav-item-special">
+            <NavLink className="nav-link" to="/contact" onClick={() => { setShow(false) }}>Contact</NavLink>
           </li>
         </div>
 
