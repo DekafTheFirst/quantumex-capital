@@ -53,6 +53,7 @@ h6 {
     color: var(--cl--6--);
     text-transform: capitalize;
     margin: 0;
+    
 }
 
 h1 {
@@ -61,13 +62,17 @@ h1 {
 
 h2 {
     font-size: clamp(18px, 10vw, 24px);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 h3 {
     font-size: 20px;
 }
 
+h6 {
+    
+    margin-bottom: 7px;
+}
 p {
     font-size: 16px;
     color: var(--cl--6--);
@@ -145,8 +150,9 @@ section {
 
 
 .section-heading {
-    color: var(--cl--5--);
+    color: var(--cl--3--);
     font-weight: 800;
+    text-transform: uppercase;
 }
 
 
@@ -578,10 +584,25 @@ section {
 }
 
 
+/* Home-About Us */
+.home-about-us {
+    margin-top: 80px;
+}
 .home-about-us .content {
     display: flex;
     flex-direction: column;
 }
+
+
+
+.home-about-us .content h2 {
+    font-weight: 800;
+}
+
+.home-about-us .content p {
+    margin-bottom: 9px;
+}
+
 
 .home-about-us .content img,
 .home-about-us .content .wrapper {
@@ -604,43 +625,51 @@ section {
 
 .home-about-us .header-image {
     position: relative;
+    width: 80%;
+    height: 100%;
 }
 
-.home-about-us .header-image .img-wrapper {
-    width: 90%;
+.home-about-us .header-image .header-image-wrapper {
+    height: 100%;
 }
 
-.home-about-us .header-image img,
+
+
+.home-about-us .header-image .item {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.home-about-us .header-image .img,
 .home-about-us .header-image canvas {
     height: 100%;
+    width: 100%;
     border-radius: 8px;
 }
 
-.home-about-us .header-image .img-wrapper:first-child {
-    border-right: 10px solid var(--cl--1--);
-    border-top: 10px solid var(--cl--1--);
+.home-about-us .header-image .item:first-child {
+    
     border-radius: 8px;
     overflow: hidden;
 
 }
 
 
-.home-about-us .header-image .img-wrapper:last-child {
+.home-about-us .header-image .item:last-child {
     position: absolute;
-    right: 0;
+    left: -40px;
     top: -45px;
     z-index: -1;
     overflow: hidden;
 
 }
 
-.home-about-us .page-btn-2 {
-    border-radius: 5px;
-    padding: 15px 60px;
-    border-width: 2px;
-    font-weight: 500;
-    width: 100%;
-    text-align: center;
+.home-about-us a{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .projects .cards {
@@ -1466,7 +1495,7 @@ footer .page-btn:hover {
         right: 0;
         z-index: 2;
         filter: none;
-        top: calc(var(--nav-height) + 40px);
+        top: calc(var(--nav-height));
     }
 
     .container-fluid {
@@ -1474,8 +1503,8 @@ footer .page-btn:hover {
     }
 
     .home-about-us .container-fluid>.row {
-        align-items: end;
-        flex-direction: row-reverse;
+        align-items: center;
+        flex-direction: row;
     }
 
     .home-about-us .container-fluid>.row>div {

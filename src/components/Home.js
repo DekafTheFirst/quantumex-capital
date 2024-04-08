@@ -2,27 +2,27 @@ import React, { } from 'react'
 import { Link } from 'react-router-dom';
 import OptimizedImage from './OptimizedImage/OptimizedImage';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-
+import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 
 
 // import required modules
 // import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
 // import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-const Home = ({scrolled}) => {
+const Home = ({ scrolled }) => {
   // const swiperRef = useRef(null);
 
   return (
     <div className='home'>
 
       <section className="hero">
-        <div class={`overlay ${scrolled ? 'scrolled':''}`}>
+        <div class={`overlay ${scrolled ? 'scrolled' : ''}`}>
           <svg width="100" height="100%" class="line-svg">
             <line x1="0" y1="0" x2="0" y2="100%" stroke="lightGray" stroke-width="0.5" />
 
             <circle cx="0" cy="100" r="4" fill="#08b2b4" />
             <circle cx="0" cy="500" r="4" fill="#08b2b4" />
-            
+
 
           </svg>
           <svg width="100" height="100%" class="line-svg-2">
@@ -53,7 +53,52 @@ const Home = ({scrolled}) => {
         <OptimizedImage src={require("../imgs/grace-medical/finance.jpg")} className="hero-img" alt="hero-img" blurhash="LcLEHB~pIUIU_4xvt7j@E2NHRjof" />
       </section>
 
-      <section className="welcome mx-auto">
+      <section className="home-about-us">
+        <div className="container-fluid">
+          <div className="row ">
+            <div className="col-md-6 d-flex justify-content-center">
+              <div className="header-image">
+                <div className="header-image-wrapper">
+                  <div className="item">
+                    <OptimizedImage src={require("../imgs/grace-medical/41.JPG")} className='img' blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" />
+                  </div>
+                  <div className="item">
+                    <OptimizedImage src={require("../imgs/grace-medical/2.JPG")} className="img" blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" />
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <div className="col-md-6">
+              <div className="row">
+                <div className="col-lg-12  content">
+                  <h6 className='section-heading' >Who We Are</h6>
+                  <h2 >Our Story Is One Faith</h2>
+                  <p>
+                    With compassion, and a commitment
+                    to serving others. Founded on
+                    Christian principles, we strive to be a
+                    beacon of hope in the field of
+                    healthcare.
+                  </p>
+                  <p>
+                    With compassion, and a commitment
+                    to serving others. Founded on
+                    Christian principles, we strive to be a
+                  </p>
+                  <Link to="/about-us"><PlayCircleIcon fontSize='large' /> See How It Works</Link>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+      {/* <section className="welcome mx-auto">
         <div className="container-fluid">
           <OptimizedImage src={require("../imgs/grace-medical/finance.jpg")} style={{ height: 250, width: 200 }} alt="hero-img" blurhash="LcLEHB~pIUIU_4xvt7j@E2NHRjof" />
 
@@ -69,7 +114,7 @@ const Home = ({scrolled}) => {
           </p>
         </div>
 
-      </section>
+      </section> */}
 
 
       <section className='reputation bg-green'>
@@ -126,57 +171,7 @@ const Home = ({scrolled}) => {
       </section>
 
 
-      <section className="home-about-us">
-        <div className="container-fluid">
-          <div className="row ">
-            <div className="col-xl-6 d-flex justify-content-center">
-              <div className="header-image">
-                <div className="img-wrapper">
-                  {/* <LazyLoadImage src={require("../imgs/grace-medical/21.JPG")} effect='blur' /> */}
-                  <OptimizedImage src={require("../imgs/grace-medical/41.JPG")} blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" />
-                </div>
-                <div className="img-wrapper">
-                  <img src={require('../imgs/grace-medical/20.JPG')} alt="" />
-                </div>
-              </div>
 
-            </div>
-            <div className="col-xl-6">
-              <div className="row mt-4">
-                <div className="col-lg-12  content">
-                  <h6 className='section-heading' >About Us</h6>
-                  <h2 >Our Story Is One Faith</h2>
-                  <p>
-                    With compassion, and a commitment
-                    to serving others. Founded on
-                    Christian principles, we strive to be a
-                    beacon of hope in the field of
-                    healthcare.
-                  </p>
-                  <div className="row align-items-center mt-3 mb-4">
-                    <div className="col-6 col-sm-4">
-                      <img src={require('../imgs/grace-medical/1.JPG')} alt="" />
-
-                    </div>
-                    <div className="col-6 col-sm-7">
-                      <p className="ps-3">We recognize the
-                        profound impact
-                        that a gentle touch
-                        can have on the
-                        healing journey.
-                      </p>
-                    </div>
-                  </div>
-                  <Link to="/about-us" className='page-btn-2'>Learn More</Link>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-      </section>
 
       <section className="services bg-green">
         <div className="container-fluid">
