@@ -3,7 +3,6 @@ import './App.css';
 
 import Footer from './components/Footer';
 import Home from './components/Home';
-import Navbar from './components/Navbar';
 import Contact from './components/Contact';
 import NoPage from './components/NoPage';
 import ScrollToTop from './components/ScrollToTop';
@@ -12,6 +11,7 @@ import Company from './components/Company';
 import Projects from './components/Projects';
 import { useEffect, useState } from 'react';
 import Services from './Pages/Services/Services';
+import Navbar from './components/Navbar/Navbar';
 
 
 function App() {

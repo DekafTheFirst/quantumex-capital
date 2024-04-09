@@ -1,9 +1,10 @@
-import React, { useEffect,  useState } from 'react'
-import { Link, NavLink, } from 'react-router-dom';
-import Home from './Home';
+import React, { useEffect, useState } from 'react'
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import Home from '../Home';
 import PlaceIcon from '@mui/icons-material/Place';
 import { Email } from '@mui/icons-material';
-
+import { menuItemsData } from './menuItemsData';
+import MenuItem from './MenuItem';
 // const routes = [
 //   { name: "home", path: "/", component: <Home /> }
 // ]
@@ -12,7 +13,16 @@ import { Email } from '@mui/icons-material';
 const Navbar = ({ scrolled }) => {
   const [dropdownClicked, setDropDownClicked] = useState(false);
   const [show, setShow] = useState(false);
-  
+  const location = useLocation();
+  const checkIfSubmenuIsActive = (menu) => { 
+    if (location.pathname.includes(menu.url) && menu.url !== "/") {
+      return true
+    }
+    else {
+      return false
+    }
+
+  }
 
   const toggleShow = () => {
     setShow(!show)
@@ -32,7 +42,7 @@ const Navbar = ({ scrolled }) => {
     return () => {
       document.removeEventListener('click', handleOutsideClick);
     };
-    
+
   }, []);
 
   return (
@@ -48,13 +58,18 @@ const Navbar = ({ scrolled }) => {
         </div>
       </div> */}
       <div className="container-fluid">
-        <Link className="navbar-brand logo" to="/" onClick={() => setShow(false)}><img src={require("../imgs/logo.png")} alt="" /></Link>
+        <Link className="navbar-brand logo" to="/" onClick={() => setShow(false)}><img src={require("../../imgs/logo.png")} alt="" /></Link>
         <button className="navbar-toggler" type="button" onClick={toggleShow}>
           <span className="navbar-toggler-icon my-navbar-toggler-icon"></span>
         </button>
         <div className={`collapse navbar-collapse ${show ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item">
+            {menuItemsData.map((menu, index) => {
+              return (
+                <MenuItem item={menu} key={index} show={show} setShow={setShow} navItemSpecial={menu.navItemSpecial} isSubmenuActive={checkIfSubmenuIsActive(menu)} />
+              )
+            })}
+            {/* <li className="nav-item">
               <NavLink to="/" className="nav-link" onClick={() => { setShow(false) }}>Home</NavLink>
             </li>
 
@@ -68,7 +83,7 @@ const Navbar = ({ scrolled }) => {
 
             <li className="nav-item">
               <NavLink className="nav-link" to="/projects" onClick={() => { setShow(false) }}>Projects</NavLink>
-            </li>
+            </li> */}
 
 
           </ul>
