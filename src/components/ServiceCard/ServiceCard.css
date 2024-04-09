@@ -1,0 +1,48 @@
+.service-wrapper {
+    padding: 0 0 50px;
+}
+.service {
+    border: 3px solid var(--cl--9--);
+    padding: 30px 15px 15px;
+    
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.service .icon {
+    width: 50px;
+    height: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: -35px;
+    background-color: var(--cl--5--);
+    padding: 0 5px;
+    box-sizing: content-box;
+}
+.service .title {
+    color: var(--cl--9--);
+    text-transform: uppercase;
+}
+.service .learn-more{
+    margin-top: auto;
+    padding-top: 20px;
+    color: var(--cl--1--);
+}
+.service.hovered .learn-more{
+    color: var(--cl--2--);
+}
+
+.service p {
+    color: var(--cl--9--);
+}.service.hovered {
+    border: 3px solid var(--cl--1--);
+    cursor: pointer;
+}
+.service.hovered .title{
+    color: var(--cl--1--);
+
+}
+.service.hovered p {
+    color: var(--cl--1--);
+}

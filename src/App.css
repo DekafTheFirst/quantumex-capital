@@ -63,7 +63,7 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(18px, 10vw, 24px);
+    font-size: clamp(18px, 10vw, 30px);
     margin-bottom: 10px;
 }
 
@@ -636,6 +636,9 @@ section {
     flex-direction: column;
 }
 
+.reputation .section-heading {
+    color: var(--cl--2--);
+}
 
 
 .reputation .content h1 {
@@ -768,55 +771,22 @@ section {
     color: var(--cl--1--);
 }
 
+.services .row>* {
+    display: flex;
+    justify-content: center;
+}
+
+.services .section-heading {
+    color: var(--cl--2--);
+    text-align: center;
+    margin-bottom: 50px;
+}
 
 /* .services .section-heading {
     width: 40%;
 } */
 
-.services .service-wrapper {
-    padding: 0 40px 50px 0;
-}
 
-.services .service {
-    border: 3px solid var(--cl--9--);
-    padding: 15px;
-    padding-top: 30px;
-    border-radius: 5px;
-    position: relative;
-}
-
-.services .service .icon {
-    width: 50px;
-    height: 50px;
-    font-weight: 600;
-    position: absolute;
-    top: -35px;
-    background-color: var(--cl--5--);
-    padding: 0 5px;
-    box-sizing: content-box;
-}
-
-.services .service .title {
-    color: var(--cl--9--);
-    text-transform: uppercase;
-}
-
-.services .service p {
-    color: var(--cl--9--);
-}
-.services .service:hover {
-    border: 3px solid var(--cl--1--);
-    cursor: pointer;
-}
-
-.services .service:hover .title{
-    color: var(--cl--1--);
-
-}
-
-.services .service:hover p {
-    color: var(--cl--1--);
-}
 
 
 
@@ -1318,6 +1288,9 @@ footer .page-btn:hover {
         max-width: 1200px;
     }
 
+    .services .service-wrapper {
+        padding: 0 20px 40px;
+    }
 
 
     /* .navbar .info {
@@ -1493,8 +1466,8 @@ footer .page-btn:hover {
 
     .reputation .page-btn-2 {
         width: unset;
-
     }
+
 
     .home-about-us .row {
         gap: 0;
@@ -1507,6 +1480,13 @@ footer .page-btn:hover {
     }
 
     .home-about-us .home-about-us-card {}
+
+
+
+    .services .section-heading {
+        text-align: start;
+        width: 40%;
+    }
 
     .projects .row img {
         aspect-ratio: 1;

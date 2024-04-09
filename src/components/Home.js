@@ -1,16 +1,53 @@
-import React, { } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import OptimizedImage from './OptimizedImage/OptimizedImage';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
 import { ReactComponent as ProjectManagement } from '../imgs/grace-medical/project-management.svg'
+import ServiceCard from './ServiceCard/ServiceCard';
 // import required modules
 // import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
 // import { LazyLoadImage } from 'react-lazy-load-image-component';
 
+const services = [
+  {
+    title: 'Project Management',
+    desc: 'Our medical projects go beyond treating physical ailments. We approach healthcare holistically. We approach healthcare holistically.',
+    icon: <ProjectManagement />
+  },
+  {
+    title: 'Project Employment',
+    desc: 'Our medical projects go beyond treating physical ailments. We approach healthcare holistically. ',
+    icon: <ProjectManagement />
+  },
+  {
+    title: 'Project Employment',
+    desc: 'Our medical projects go beyond treating physical ailments. We approach healthcare holistically. We approach healthcare holistically.',
+    icon: <ProjectManagement />
+  },{
+    title: 'Project Employment',
+    desc: 'Our medical projects go beyond treating physical ailments. We approach healthcare holistically. We approach healthcare holistically.',
+    icon: <ProjectManagement />
+  },{
+    title: 'Project Employment',
+    desc: 'Our medical projects go beyond treating physical ailments. We approach healthcare holistically.',
+    icon: <ProjectManagement />
+  },
+]
+
 const Home = ({ scrolled }) => {
   // const swiperRef = useRef(null);
+  const [hoveredIndex, setHoveredIndex] = useState(0); // State variable to track hovered index
+
+  const handleCardHover = (index) => {
+    setHoveredIndex(index);
+    console.log('hover changed')
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(0); // Reset hovered index when mouse leaves the cards area
+  };
 
   return (
     <div className='home'>
@@ -163,46 +200,56 @@ const Home = ({ scrolled }) => {
 
 
 
-      <section className="services">
+      <section className="services" onMouseLeave={handleMouseLeave}>
         <div className="container-fluid">
           <div className="row">
-            <div className="col-sm-6 col-md-4">
-              <h4 className='section-heading'>Unmatched Servive.<br />Unmatched Excellence.</h4>
+            <div className="col-md-6 col-xl-4">
+              <h2 className='section-heading'>Unmatched Service.<br />Unmatched Excellence.</h2>
             </div>
-            <div className="col-sm-6 col-md-4 service-wrapper">
-              <div className="service">
+            {services.map((service, index) => (
+              <ServiceCard
+                key={index}
+                service={service}
+                isHovered={index === hoveredIndex}
+                onMouseEnter={() => handleCardHover(index)}
+              />
+              ))}
+
+            {/* <div className="col-md-6 col-xl-4 service-wrapper">
+              <Link to="" className="service">
                 <ProjectManagement className='icon' />
                 <h6 className='title'>Project Management</h6>
                 <p className='card-text'>Our medical projects go beyond treating physical ailments. We approach healthcare holistically. </p>
-              </div>
-            </div>
-            <div className="col-sm-6 col-md-4 service-wrapper">
-              <div className="service">
+                <p className='learn-more'>learn more...</p>
+
+              </Link>
+            </div><div className="col-md-6 col-xl-4 service-wrapper">
+              <Link to="" className="service">
                 <ProjectManagement className='icon' />
                 <h6 className='title'>Project Management</h6>
                 <p className='card-text'>Our medical projects go beyond treating physical ailments. We approach healthcare holistically. </p>
-              </div>
-            </div><div className="col-sm-6 col-md-4 service-wrapper">
-              <div className="service">
+                <p className='learn-more'>learn more...</p>
+
+              </Link>
+            </div>
+            <div className="col-md-6 col-xl-4 service-wrapper">
+              <Link to="" className="service">
                 <ProjectManagement className='icon' />
                 <h6 className='title'>Project Management</h6>
                 <p className='card-text'>Our medical projects go beyond treating physical ailments. We approach healthcare holistically. </p>
-              </div>
+                <p className='learn-more'>learn more...</p>
+
+              </Link>
             </div>
-            <div className="col-sm-6 col-md-4 service-wrapper">
-              <div className="service">
+            <div className="col-md-6 col-xl-4 service-wrapper">
+              <Link to="" className="service">
                 <ProjectManagement className='icon' />
                 <h6 className='title'>Project Management</h6>
                 <p className='card-text'>Our medical projects go beyond treating physical ailments. We approach healthcare holistically. </p>
-              </div>
-            </div>
-            <div className="col-sm-6 col-md-4 service-wrapper">
-              <div className="service">
-                <ProjectManagement className='icon' />
-                <h6 className='title'>Project Management</h6>
-                <p className='card-text'>Our medical projects go beyond treating physical ailments. We approach healthcare holistically. </p>
-              </div>
-            </div>
+                <p className='learn-more'>learn more...</p>
+
+              </Link>
+            </div> */}
           </div>
         </div>
       </section>
