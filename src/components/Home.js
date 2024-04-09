@@ -4,7 +4,7 @@ import OptimizedImage from './OptimizedImage/OptimizedImage';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
-
+import { ReactComponent as ProjectManagement } from '../imgs/grace-medical/project-management.svg'
 // import required modules
 // import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
 // import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -53,7 +53,7 @@ const Home = ({ scrolled }) => {
         <OptimizedImage src={require("../imgs/grace-medical/finance.jpg")} className="hero-img" alt="hero-img" blurhash="LcLEHB~pIUIU_4xvt7j@E2NHRjof" />
       </section>
 
-      <section className="home-about-us">
+      <section className="reputation">
         <div className="container-fluid">
           <div className="row ">
             <div className="col-md-6 d-flex justify-content-center">
@@ -73,20 +73,17 @@ const Home = ({ scrolled }) => {
             <div className="col-md-6">
               <div className="row">
                 <div className="col-lg-12  content">
-                  <h6 className='section-heading' >Who We Are</h6>
-                  <h2 >Our Story Is One Faith</h2>
+                  <span className='section-heading' >World Leading Project Management Company.</span>
+                  <h1>Our Story Is One Faith</h1>
                   <p>
                     With compassion, and a commitment
                     to serving others. Founded on
                     Christian principles, we strive to be a
                     beacon of hope in the field of
+                    healthcare. beacon of hope in the field of
                     healthcare.
                   </p>
-                  <p>
-                    With compassion, and a commitment
-                    to serving others. Founded on
-                    Christian principles, we strive to be a
-                  </p>
+
                   <Link to="/about-us"><PlayCircleIcon fontSize='large' /> See How It Works</Link>
                 </div>
 
@@ -117,7 +114,7 @@ const Home = ({ scrolled }) => {
       </section> */}
 
 
-      <section className='reputation'>
+      <section className='home-about-us'>
         <div className="container-fluid">
           <div className="row">
             <div className="col col-md-4 left">
@@ -130,26 +127,26 @@ const Home = ({ scrolled }) => {
             </div>
             <div className="col-md-8">
               <div className="row cards">
-                <div to="" className="col-md-6 reputation-card">
-                  <OptimizedImage src={require("../imgs/grace-medical/2.JPG")} className="img" blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" />
-                  <h5>Helping Hand</h5>
+                <div to="" className="col-md-6 home-about-us-card">
+                  <OptimizedImage src={require("../imgs/grace-medical/46.jpg")} className="img" blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" />
+                  <h6>WHO WE ARE</h6>
                   <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut expedita
                   </p>
-                  <Link to="">
-                    <ChevronRightRoundedIcon fontSize='medium' className='icon' />
+                  <Link to="" className='icon'>
+                    <ChevronRightRoundedIcon fontSize='medium' />
                   </Link>
 
                 </div>
 
-                <div to="" className="col-md-6 reputation-card">
-                  <OptimizedImage src={require("../imgs/grace-medical/2.JPG")} className="img" blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" />
-                  <h5>Helping Hand</h5>
+                <div to="" className="col-md-6 home-about-us-card">
+                  <OptimizedImage src={require("../imgs/grace-medical/47.jpg")} className="img" blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" />
+                  <h6>PROJECT MANAGEMENT REDEFINED</h6>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut expedita
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut expedita consectetur adipisicing elit. Dolorem ut expedita
                   </p>
-                  <Link to="">
-                    <ChevronRightRoundedIcon fontSize='medium' className='icon' />
+                  <Link to="" className='icon'>
+                    <ChevronRightRoundedIcon fontSize='medium' />
                   </Link>
 
                 </div>
@@ -166,38 +163,46 @@ const Home = ({ scrolled }) => {
 
 
 
-      <section className="services bg-green">
+      <section className="services">
         <div className="container-fluid">
           <div className="row">
-            <h6 className='section-heading'>What we do</h6>
-            <h2 >The details of our good cause</h2>
-            <div className="cards">
-              <div className="card">
-                <img className="card-img-top" src={require("../imgs/grace-medical/10.jpg")} alt="" />
-                <div className="card-body">
-                  <h3 className='card-title'>Holistic Medical Care</h3>
-                  <p className='card-text'>Our medical projects go beyond treating physical ailments. We approach healthcare holistically, recognizing the interconnectedness of body, mind, and spirit.</p>
-                  <Link className="page-btn-2 card-btn" to="/services">Join us</Link>
-                </div>
-              </div>
-              <div className="card">
-                <img className="card-img-top" src={require("../imgs/grace-medical/41.JPG")} alt="" />
-                <div className="card-body">
-                  <h3 className='card-title'>Community Outreach Programs</h3>
-                  <p className='card-text'>Through various outreach programs, we aim to improve the overall health of our communities, addressing both medical and social determinants of well-being.</p>
-                  <Link className="page-btn-2 card-btn" to="/services">Join us</Link>
-                </div>
-              </div>
-              <div className="card">
-                <img className="card-img-top" src={require("../imgs/grace-medical/2.JPG")} alt="" />
-                <div className="card-body">
-                  <h3 className='card-title'>Spiritual Support and Counseling</h3>
-                  <p className='card-text'>We understand the importance of the spiritual aspects of health. Our compassionate chaplains and counselors are ready to provide spiritual support to those in need.</p>
-                  <Link className="page-btn-2 card-btn" to="/services">Join us</Link>
-                </div>
+            <div className="col-sm-6 col-md-4">
+              <h4 className='section-heading'>Unmatched Servive.<br />Unmatched Excellence.</h4>
+            </div>
+            <div className="col-sm-6 col-md-4 service-wrapper">
+              <div className="service">
+                <ProjectManagement className='icon' />
+                <h6 className='title'>Project Management</h6>
+                <p className='card-text'>Our medical projects go beyond treating physical ailments. We approach healthcare holistically. </p>
               </div>
             </div>
-
+            <div className="col-sm-6 col-md-4 service-wrapper">
+              <div className="service">
+                <ProjectManagement className='icon' />
+                <h6 className='title'>Project Management</h6>
+                <p className='card-text'>Our medical projects go beyond treating physical ailments. We approach healthcare holistically. </p>
+              </div>
+            </div><div className="col-sm-6 col-md-4 service-wrapper">
+              <div className="service">
+                <ProjectManagement className='icon' />
+                <h6 className='title'>Project Management</h6>
+                <p className='card-text'>Our medical projects go beyond treating physical ailments. We approach healthcare holistically. </p>
+              </div>
+            </div>
+            <div className="col-sm-6 col-md-4 service-wrapper">
+              <div className="service">
+                <ProjectManagement className='icon' />
+                <h6 className='title'>Project Management</h6>
+                <p className='card-text'>Our medical projects go beyond treating physical ailments. We approach healthcare holistically. </p>
+              </div>
+            </div>
+            <div className="col-sm-6 col-md-4 service-wrapper">
+              <div className="service">
+                <ProjectManagement className='icon' />
+                <h6 className='title'>Project Management</h6>
+                <p className='card-text'>Our medical projects go beyond treating physical ailments. We approach healthcare holistically. </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

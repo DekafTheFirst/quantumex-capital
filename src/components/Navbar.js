@@ -1,12 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import React, { useEffect,  useState } from 'react'
+import { Link, NavLink, } from 'react-router-dom';
 import Home from './Home';
 import PlaceIcon from '@mui/icons-material/Place';
 import { Email } from '@mui/icons-material';
 
-const routes = [
-  { name: "home", path: "/", component: <Home /> }
-]
+// const routes = [
+//   { name: "home", path: "/", component: <Home /> }
+// ]
 
 
 const Navbar = ({ scrolled }) => {

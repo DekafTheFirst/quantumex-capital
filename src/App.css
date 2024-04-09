@@ -24,7 +24,7 @@ body {
     --cl--6--: #000000;
     --cl--7--: #EEEEEE;
     --cl--8--: #0D6EFD;
-    
+    --cl--9--: #A9A9A9;
 
 
 
@@ -55,7 +55,7 @@ h6 {
     color: var(--cl--6--);
     text-transform: capitalize;
     margin: 0;
-    
+
 }
 
 h1 {
@@ -72,9 +72,10 @@ h3 {
 }
 
 h6 {
-    
+
     margin-bottom: 7px;
 }
+
 p {
     font-size: 16px;
     color: var(--cl--6--);
@@ -144,17 +145,15 @@ ul {
 }
 
 section {
-    margin-top: 25px;
-    margin-bottom: 25px;
     padding: 50px 0;
 }
 
 
 
 .section-heading {
-    color: var(--cl--3--);
+    color: var(--cl--1--);
     font-weight: 800;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 
@@ -549,45 +548,45 @@ section {
     display: block;
 }
 
-.reputation {
+.home-about-us {
     padding: 100px 0px;
     background-color: var(--cl--7--);
 }
 
-.reputation .row {
+.home-about-us .row {
     align-items: stretch;
     gap: 30px;
 }
 
-.reputation .col.left {
+.home-about-us .col.left {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 0 10px;
 }
 
-.reputation .col.left .bottom {
+.home-about-us .col.left .bottom {
     display: flex;
     flex-direction: column;
 }
 
-.reputation .col.left .bottom span:first-child {
+.home-about-us .col.left .bottom span:first-child {
     color: var(--cl--3--);
     font-weight: 600;
 }
 
-.reputation .cards {
+.home-about-us .cards {
     height: 100%;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
 }
 
-.reputation h2 {
+.home-about-us h2 {
     color: var(--cl--8--);
 }
 
-.reputation .reputation-card {
+.home-about-us .home-about-us-card {
     max-width: 460px;
     border: none;
     display: flex;
@@ -595,50 +594,62 @@ section {
     gap: 10px;
 }
 
-.reputation .reputation-card .img {
+.home-about-us .home-about-us-card .img {
     height: 200px;
     width: 100%;
     border-radius: 10px;
 }
-.reputation .reputation-card h5 {
+
+.home-about-us .home-about-us-card h6 {
     color: var(--cl--8--);
 }
 
-.reputation .reputation-card p {
+.home-about-us .home-about-us-card p {}
+
+
+.home-about-us .home-about-us-card .icon {
+    background-color: var(--cl--8--);
+    color: var(--cl--1--);
+    border-radius: 50%;
+    margin-top: auto;
+    padding: 3px;
+    margin-top: auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-.reputation .reputation-card .icon {
-   background-color: var(--cl--8--);
-   color: var(--cl--1--);
-   border-radius: 50%; 
-   margin-top: auto;
-   
+.home-about-us .home-about-us-card .icon svg {
+    width: 25px;
+    height: 25px;
 }
 
 
 /* Home-About Us */
-.home-about-us {
-    margin-top: 80px;
+.reputation {
+    margin-top: 100px;
 }
-.home-about-us .content {
+
+.reputation .content {
     display: flex;
     flex-direction: column;
 }
 
 
 
-.home-about-us .content h2 {
-    font-weight: 800;
+.reputation .content h1 {
+    /* font-size: 40px; */
+    font-weight: 600;
 }
 
-.home-about-us .content p {
+.reputation .content p {
     margin-bottom: 9px;
 }
 
 
-.home-about-us .content img,
-.home-about-us .content .wrapper {
+.reputation .content img,
+.reputation .content .wrapper {
     width: 100%;
     border-radius: 3px;
 
@@ -657,39 +668,40 @@ section {
 
 
 
-.home-about-us .header-image {
+.reputation .header-image {
     position: relative;
     width: 80%;
     height: 100%;
 }
 
-.home-about-us .header-image .header-image-wrapper {
+.reputation .header-image .header-image-wrapper {
     height: 100%;
 }
 
 
 
-.home-about-us .header-image .item {
+.reputation .header-image .item {
     width: 100%;
     height: 100%;
-    box-shadow: 0 12px 18px rgba(13, 110, 253, 0.4); /* Adjust the values as needed */
+    box-shadow: 0 12px 18px rgba(13, 110, 253, 0.4);
+    /* Adjust the values as needed */
 }
 
-.home-about-us .header-image .img,
-.home-about-us .header-image canvas {
+.reputation .header-image .img,
+.reputation .header-image canvas {
     height: 100%;
     width: 100%;
     border-radius: 8px;
 }
 
-.home-about-us .header-image .item:first-child {
+.reputation .header-image .item:first-child {
     border-radius: 8px;
     overflow: hidden;
 
 }
 
 
-.home-about-us .header-image .item:last-child {
+.reputation .header-image .item:last-child {
     position: absolute;
     left: -40px;
     top: -45px;
@@ -698,7 +710,7 @@ section {
 
 }
 
-.home-about-us a{
+.reputation a {
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -749,6 +761,63 @@ section {
     margin-top: auto;
 
 }
+
+/* Services */
+.services {
+    background: var(--cl--5--);
+    color: var(--cl--1--);
+}
+
+
+/* .services .section-heading {
+    width: 40%;
+} */
+
+.services .service-wrapper {
+    padding: 0 40px 50px 0;
+}
+
+.services .service {
+    border: 3px solid var(--cl--9--);
+    padding: 15px;
+    padding-top: 30px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.services .service .icon {
+    width: 50px;
+    height: 50px;
+    font-weight: 600;
+    position: absolute;
+    top: -35px;
+    background-color: var(--cl--5--);
+    padding: 0 5px;
+    box-sizing: content-box;
+}
+
+.services .service .title {
+    color: var(--cl--9--);
+    text-transform: uppercase;
+}
+
+.services .service p {
+    color: var(--cl--9--);
+}
+.services .service:hover {
+    border: 3px solid var(--cl--1--);
+    cursor: pointer;
+}
+
+.services .service:hover .title{
+    color: var(--cl--1--);
+
+}
+
+.services .service:hover p {
+    color: var(--cl--1--);
+}
+
 
 
 
@@ -1286,8 +1355,7 @@ footer .page-btn:hover {
         height: 60vh;
     }
 
-    .reputation .reputation-card {
-    }
+    .home-about-us .home-about-us-card {}
 }
 
 @media screen and (min-width: 640px) {
@@ -1323,6 +1391,7 @@ footer .page-btn:hover {
         padding: 5px 10px;
         border-radius: 5px;
     }
+
     .navbar .navbar-nav .nav-item .nav-link.active {
         background: var(--cl--2--);
         color: var(--cl--6--);
@@ -1422,22 +1491,22 @@ footer .page-btn:hover {
     }
 
 
-    .home-about-us .page-btn-2 {
+    .reputation .page-btn-2 {
         width: unset;
 
     }
 
-    .reputation .row {
+    .home-about-us .row {
         gap: 0;
-        
+
     }
 
-    .reputation .reputation-card {
+    .home-about-us .home-about-us-card {
         width: 50%;
         padding: 0 15px;
     }
 
-    .reputation .reputation-card {}
+    .home-about-us .home-about-us-card {}
 
     .projects .row img {
         aspect-ratio: 1;
@@ -1457,6 +1526,7 @@ footer .page-btn:hover {
     }
 
 }
+
 @media screen and (max-width: 991px) and (orientation: landscape) {
     .hero {
         height: 100vh;
@@ -1466,6 +1536,7 @@ footer .page-btn:hover {
         font-size: 40px;
     }
 }
+
 @media screen and (min-width: 992px) {
     .hero .hero-content {
         max-width: 80%;
@@ -1550,13 +1621,13 @@ footer .page-btn:hover {
         width: 80%;
     }
 
-    .home-about-us .container-fluid>.row {
-        
+    .reputation .container-fluid>.row {
+
         flex-direction: row;
     }
 
-    .home-about-us .container-fluid>.row>div {
-        padding: 25px;
+    .reputation .container-fluid>.row>div {
+        padding: 5px;
     }
 
     .banner {
@@ -1567,11 +1638,11 @@ footer .page-btn:hover {
         height: 100vh;
     }
 
-    .home-about-us .page-btn-2 {
+    .reputation .page-btn-2 {
         width: 100%;
     }
 
-    .reputation .container-fluid {
+    .home-about-us .container-fluid {
         width: 90%;
     }
 
