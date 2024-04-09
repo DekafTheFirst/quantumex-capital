@@ -759,23 +759,23 @@ section {
 }
 
 /* Services */
-.services {
+.home .services {
     background: var(--cl--5--);
     color: var(--cl--1--);
 }
 
-.services .row>* {
+.home .services .row>* {
     display: flex;
     justify-content: center;
 }
 
-.services .section-heading {
+.home .services .section-heading {
     color: var(--cl--2--);
     text-align: center;
     margin-bottom: 50px;
 }
 
-/* .services .section-heading {
+/* .home .services .section-heading {
     width: 40%;
 } */
 
@@ -816,7 +816,7 @@ section {
 
 .about-us .banner {
     margin-bottom: 40px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./imgs/grace-medical/2.JPG");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./imgs/grace-medical/2.JPG");
 }
 
 .about-us .row {
@@ -976,7 +976,7 @@ section {
 }
 
 .projects .banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./imgs/grace-medical/33.JPG");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./imgs/grace-medical/33.JPG");
     background-position: center center;
 }
 
@@ -1017,7 +1017,7 @@ section {
 /* give */
 
 .give .banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("./imgs/grace-medical/4.JPG");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./imgs/grace-medical/4.JPG");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1049,7 +1049,7 @@ section {
 /* Contact */
 
 .contact-page .banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./imgs/grace-medical/7.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./imgs/grace-medical/7.jpg");
     background-position: 50% 50%;
 
 }
@@ -1302,7 +1302,7 @@ footer .page-btn:hover {
         max-width: 1200px;
     }
 
-    .services .service-wrapper {
+    .home .services .service-wrapper {
         padding: 0 20px 40px;
     }
 
@@ -1499,7 +1499,7 @@ footer .page-btn:hover {
 
 
 
-    .services .section-heading {
+    .home .services .section-heading {
         text-align: start;
         width: 40%;
     }

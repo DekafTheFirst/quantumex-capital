@@ -32,6 +32,7 @@ const Navbar = ({ scrolled }) => {
     return () => {
       document.removeEventListener('click', handleOutsideClick);
     };
+    
   }, []);
 
   return (

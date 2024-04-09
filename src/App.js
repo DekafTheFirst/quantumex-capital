@@ -6,12 +6,12 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Contact from './components/Contact';
 import NoPage from './components/NoPage';
-import Services from './components/Services';
 import ScrollToTop from './components/ScrollToTop';
 import Give from './components/Give';
 import Company from './components/Company';
 import Projects from './components/Projects';
 import { useEffect, useState } from 'react';
+import Services from './Pages/Services/Services';
 
 
 function App() {
@@ -49,7 +49,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home scrolled={scrolled}/>} />
             <Route path="/company" element={<Company />} />
-            <Route path="/services" element={<Services />} />
+            <Route path="/services/:slug" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/give" element={<Give />} />

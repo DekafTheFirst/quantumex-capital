@@ -1,0 +1,148 @@
+.services .banner {
+    margin-bottom: 40px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../../imgs/grace-medical/13.jpg");
+
+}
+
+
+.page .container-fluid {
+    margin-top: 80px;
+    margin-bottom: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.page .tags{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding-right: 10px;
+    width: auto;
+    margin-top: 43px;
+}
+
+.page .filter h3 {
+    margin-bottom: 30px;
+}
+
+
+.page .tag {
+    padding: 5px 8px;    
+    background-color: transparent;
+    border: 2px solid var(--cl--3--);
+    border-radius: 5px;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--cl--2--);
+}
+.page .tag:hover {
+    background-color: #ffeb82;
+}
+.page .tag.active {
+    background-color:  var(--cl--3--);
+}
+
+
+.page .images {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: start; */
+}
+
+/* .page .images::after {
+    content: "";
+    flex-basis: 350px;
+} */
+
+.page .images .image-container {
+    flex-basis: 100%;
+    
+}
+
+.page .images .image-card {
+    height: 190px;    
+    position: relative;
+    cursor: pointer;
+}
+
+.page .images .image-card .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(57, 57, 57, 0.7);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transform: all 0.2s 0.1s ease-in-out;
+    color: var(--cl--1--);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page .images .image-card .overlay a{
+    color: var(--cl--6--);
+}
+
+.page .images .image-card .overlay a:hover{
+    color: var(--cl--1--);
+}
+
+
+
+.page .images .image-card:hover .overlay{
+    transform: scale(1);
+}
+
+.page .images .image-container .image-card img{
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+
+
+
+.page .article .title {
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.page .subservice {
+    margin-bottom: 40px;
+}
+
+.page .article img {
+    margin-bottom: 30px;
+}
+
+.page .article .heading{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.page .article .subheading{
+    display: block;
+    margin-bottom: 3px;
+    font-style:italic;
+    font-weight: 500;
+}
+
+.page .article .body-text{
+    margin-bottom: 25px;
+}
+
+
+.page .article .contact .contact-us-link {
+    font-weight: 500;
+}
