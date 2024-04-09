@@ -171,7 +171,7 @@ const Home = ({ scrolled }) => {
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut expedita
                   </p>
                   <Link to="" className='icon'>
-                    <ChevronRightRoundedIcon fontSize='medium' />
+                    <ChevronRightRoundedIcon fontSize='medium' /> Learn More
                   </Link>
 
                 </div>
@@ -183,7 +183,7 @@ const Home = ({ scrolled }) => {
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut expedita consectetur adipisicing elit. Dolorem ut expedita
                   </p>
                   <Link to="" className='icon'>
-                    <ChevronRightRoundedIcon fontSize='medium' />
+                    <ChevronRightRoundedIcon fontSize='medium' /> Learn More
                   </Link>
 
                 </div>

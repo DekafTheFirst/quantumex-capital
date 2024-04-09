@@ -562,7 +562,6 @@ section {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 0 10px;
 }
 
 .home-about-us .col.left .bottom {
@@ -579,7 +578,7 @@ section {
     height: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 70px;
 }
 
 .home-about-us h2 {
@@ -602,16 +601,21 @@ section {
 
 .home-about-us .home-about-us-card h6 {
     color: var(--cl--8--);
+    margin-bottom: 0;
 }
 
 .home-about-us .home-about-us-card p {}
 
+.home-about-us .home-about-us-card .icon{
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
 
-.home-about-us .home-about-us-card .icon {
+}
+.home-about-us .home-about-us-card .icon svg {
     background-color: var(--cl--8--);
     color: var(--cl--1--);
     border-radius: 50%;
-    margin-top: auto;
     padding: 3px;
     margin-top: auto;
     width: fit-content;
@@ -628,7 +632,7 @@ section {
 
 /* Home-About Us */
 .reputation {
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .reputation .content {
@@ -657,18 +661,6 @@ section {
     border-radius: 3px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .reputation .header-image {
@@ -1129,18 +1121,25 @@ footer {
     padding-top: 4em;
     padding-bottom: 3em;
     background: var(--cl--4--);
+    position: relative;
 
 }
 
-
+footer .logo-col {
+    justify-content: center;
+}
+footer .logo {
+    width: 75%;
+}
 
 .logo-img {
     width: 40px;
 }
 
 
+
 footer h5 {
-    color: var(--cl--1--);
+    color: var(--cl--2--);
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -1152,7 +1151,7 @@ footer .link-category {
 }
 
 footer .link-category a {
-    color: var(--cl--2--);
+    color: var(--cl--1--);
     margin-bottom: 10px;
 }
 
@@ -1161,7 +1160,9 @@ footer .link-category a:hover {
 }
 
 
-
+footer form h5 {
+    color: var(--cl--7--);
+}
 
 
 footer .form-container {
@@ -1180,7 +1181,7 @@ footer .form-container input {
 
 
 footer .page-btn {
-    background-color: #FF9800;
+    background-color: var(--cl--8--);
     border: none;
     color: var(--cl--1--);
     border-radius: 5px;
@@ -1188,7 +1189,7 @@ footer .page-btn {
 }
 
 footer .page-btn:hover {
-    background-color: #F57C00;
+    background-color: var(--cl--4--);
 }
 
 
@@ -1217,12 +1218,24 @@ footer .page-btn:hover {
 }
 
 .company-info a {
-    color: #FF9800;
+    color: var(--cl--8--);
+}
+
+.company-info div {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.company-info span {
+    color: var(--cl--1--);
+    /* display: inline-block; */
+    min-width: 75px;
 }
 
 .company-info p {
     margin-bottom: 10px;
     color: var(--cl--1--);
+    /* display: inline; */
 }
 
 
@@ -1382,7 +1395,7 @@ footer .page-btn:hover {
     }
 
     .reputation .container-fluid .row {
-        gap: 40px;
+        gap: 50px;
     }
 
     .navbar .nav-item-special {
