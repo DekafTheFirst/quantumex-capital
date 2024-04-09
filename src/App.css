@@ -698,6 +698,7 @@ section {
 }
 
 .reputation .header-image .item:first-child {
+    margin-left: 20px;
     border-radius: 8px;
     overflow: hidden;
 
@@ -706,7 +707,7 @@ section {
 
 .reputation .header-image .item:last-child {
     position: absolute;
-    left: -40px;
+    left: -20px;
     top: -45px;
     z-index: -1;
     overflow: hidden;
@@ -1380,7 +1381,9 @@ footer .page-btn:hover {
         margin-top: 0;
     }
 
-
+    .reputation .container-fluid .row {
+        gap: 40px;
+    }
 
     .navbar .nav-item-special {
         margin-top: 20px;
