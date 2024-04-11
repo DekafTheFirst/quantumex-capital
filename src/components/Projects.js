@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 const Projects = () => {
   const projects = [
-    { title: 'Mission to Igumale, Ado LGA, Benue State', date: 'Sept, 2022', desc: 'We carried out a three-day outreach mission to Igumale community and we provided medical care to the inhabitants and also performed both medical and dental surgeries.', img: require('../imgs/grace-medical/3.jpg') },
-    { title: 'Mission to Tukuba Village, Kuje Area Council, F.C.T, Abuja.', date: 'March 30, 2019', desc: 'From local communities to international outreach programs, Grace Medical Outreach Intl extends its healing touch to diverse corners of', img: require('../imgs/grace-medical/32.JPG') },
-    { title: 'Mission to Iyala Community, Kogi State.', date: 'March 27, 2021', desc: 'From local communities to international outreach programs, Grace Medical Outreach Intl extends its healing touch to diverse corners of', img: require('../imgs/grace-medical/41.JPG') },
-    { title: 'Mission to Apo, F.C.T, Abuja', date: 'October 23, 2021', desc: 'From local communities to international outreach programs, Grace Medical Outreach Intl extends its healing touch to diverse corners of', img: require('../imgs/grace-medical/6.jpg') },
-    { title: 'Mission to KWALI, ABUJA.', date: 'October 23, 2021', desc: 'G.M.O.I (GRACE MEDICAL OUTREACH INTL) IN   COLLABORATION WITH B.I.F.L.D (BAOBAB INITIATIVE FOR LIFE &  DEVELOPMENT )', img: require('../imgs/grace-medical/50.jpg') },
+    { title: 'Mission to Igumale, Ado LGA, Benue State', date: 'Sept, 2022', desc: 'We carried out a three-day outreach mission to Igumale community and we provided medical care to the inhabitants and also performed both medical and dental surgeries.', img: require('../imgs/quantum-ex-capital-solutions/2.jpg') },
+    { title: 'Mission to Tukuba Village, Kuje Area Council, F.C.T, Abuja.', date: 'March 30, 2019', desc: 'From local communities to international outreach programs, Grace Medical Outreach Intl extends its healing touch to diverse corners of', img: require('../imgs/quantum-ex-capital-solutions/1.jpg') },
+    { title: 'Mission to Iyala Community, Kogi State.', date: 'March 27, 2021', desc: 'From local communities to international outreach programs, Grace Medical Outreach Intl extends its healing touch to diverse corners of', img: require('../imgs/quantum-ex-capital-solutions/2.jpg') },
+    { title: 'Mission to Apo, F.C.T, Abuja', date: 'October 23, 2021', desc: 'From local communities to international outreach programs, Grace Medical Outreach Intl extends its healing touch to diverse corners of', img: require('../imgs/quantum-ex-capital-solutions/1.jpg') },
+    { title: 'Mission to KWALI, ABUJA.', date: 'October 23, 2021', desc: 'G.M.O.I (GRACE MEDICAL OUTREACH INTL) IN   COLLABORATION WITH B.I.F.L.D (BAOBAB INITIATIVE FOR LIFE &  DEVELOPMENT )', img: require('../imgs/quantum-ex-capital-solutions/2.jpg') },
 
   ]
 
@@ -31,7 +31,7 @@ const Projects = () => {
         {projects.map((item, index) => (
           <div className="row" key={index}>
             <div className="col-md-6">
-              <img src={item.img} />
+              <img src={item.img} alt={item.title}/>
             </div>
             <div className="col-md-6 p-4">
               <h2 className='heading'>{`${item.title.substring(0, 40)}...`}</h2>

@@ -4,7 +4,7 @@ import { Blurhash } from "react-blurhash";
 import "./OptimizedImage.css"
 
 
-const OptimizedImage = ({ src, blurhash, height, width, wrapperClassName, className, alt, effect, style }) => {
+const OptimizedImage = ({ src, blurhash, height, width, wrapperClassName, className, alt, effect, style, backgroundImage }) => {
 
     const [isLoaded, setLoaded] = useState(false);
     const [isLoadStarted, setLoadStarted] = useState(false);
@@ -36,7 +36,7 @@ const OptimizedImage = ({ src, blurhash, height, width, wrapperClassName, classN
                 style={{objectFit:'cover', overflow:'hidden'}}
                 alt={alt}
                 src={src}
-                effect={effect}
+                effect='blur'
                 height={'100%'}
                 width={'100%'}
                 onLoad={handleLoad}
@@ -44,13 +44,14 @@ const OptimizedImage = ({ src, blurhash, height, width, wrapperClassName, classN
             />
 
             {!isLoaded && isLoadStarted && (
-                <Blurhash
-                    hash={blurhash}
-                    width={'100%'}
-                    height={'100%'}
-                    punch={1}
-                    className={`blurHash`}
-                />
+                // <Blurhash
+                //     hash={blurhash}
+                //     width={'100%'}
+                //     height={'100%'}
+                //     punch={1}
+                //     className={`blurHash`}
+                // />
+                <div className={`image-placeholder ${backgroundImage ? 'background-image':''}`} ></div>
             )}
         </div>
 

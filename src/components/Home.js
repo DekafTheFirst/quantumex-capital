@@ -4,37 +4,15 @@ import OptimizedImage from './OptimizedImage/OptimizedImage';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
-import { ReactComponent as ProjectManagement } from '../imgs/grace-medical/project-management.svg'
 import ServiceCard from './ServiceCard/ServiceCard';
+import { servicesList } from '../Pages/Services/Services';
+
 // import required modules
 // import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
 // import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-const services = [
-  {
-    title: 'Project Management',
-    desc: 'Our medical projects go beyond treating physical ailments. We approach healthcare holistically. We approach healthcare holistically.',
-    icon: <ProjectManagement />
-  },
-  {
-    title: 'Project Employment',
-    desc: 'Our medical projects go beyond treating physical ailments. We approach healthcare holistically. ',
-    icon: <ProjectManagement />
-  },
-  {
-    title: 'Project Employment',
-    desc: 'Our medical projects go beyond treating physical ailments. We approach healthcare holistically. We approach healthcare holistically.',
-    icon: <ProjectManagement />
-  },{
-    title: 'Project Employment',
-    desc: 'Our medical projects go beyond treating physical ailments. We approach healthcare holistically. We approach healthcare holistically.',
-    icon: <ProjectManagement />
-  },{
-    title: 'Project Employment',
-    desc: 'Our medical projects go beyond treating physical ailments. We approach healthcare holistically.',
-    icon: <ProjectManagement />
-  },
-]
+
+
 
 const Home = ({ scrolled }) => {
   // const swiperRef = useRef(null);
@@ -73,21 +51,22 @@ const Home = ({ scrolled }) => {
         <div className="container-fluid">
           <div className="hero-content">
             <h1>
-              Quantumex Financial Institution
+              Quantumex Capital Solutions
             </h1>
             <p>
-              Step into a world of financial empowerment with our dynamic website, where we blend cutting-edge technology with tailored financial solutions to unlock your true wealth potential.
-            </p>
+              We specialize in providing comprehensive solutions that integrate environmental considerations into sustainability and development decision-making processes.            </p>
 
             <div className="buttons">
-              <Link to="/about-us" className='page-btn'>Learn More <ArrowForwardIcon fontSize='21' className='icon' /></Link>
+              <Link to="/company" className='page-btn'>Learn More <ArrowForwardIcon fontSize='21' className='icon' /></Link>
               <Link to="/contact" className='page-btn-2'>Get In Touch <ArrowForwardIcon fontSize='21' className='icon' /> </Link>
             </div>
           </div>
 
         </div>
         <div className="dotted"></div>
-        <OptimizedImage src={require("../imgs/grace-medical/finance.jpg")} className="hero-img" alt="hero-img" blurhash="LcLEHB~pIUIU_4xvt7j@E2NHRjof" />
+        <OptimizedImage src={require("../imgs/quantum-ex-capital-solutions/finance.jpg")} className="hero-img" alt="hero-img" blurhash="LcLEHB~pIUIU_4xvt7j@E2NHRjof" />
+        {/* <img src={require("../imgs/quantum-ex-capital-solutions/finance.jpg")} className="hero-img" alt="hero-img" backgroundImage/> */}
+
       </section>
 
       <section className="reputation">
@@ -97,34 +76,24 @@ const Home = ({ scrolled }) => {
               <div className="header-image">
                 <div className="header-image-wrapper">
                   <div className="item">
-                    <OptimizedImage src={require("../imgs/grace-medical/41.JPG")} className='img' blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" />
+                    <OptimizedImage src={require("../imgs/quantum-ex-capital-solutions/3.jpg")} className='img' blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" />
                   </div>
                   <div className="item">
-                    <OptimizedImage src={require("../imgs/grace-medical/2.JPG")} className="img" blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" />
+                    <OptimizedImage src={require("../imgs/quantum-ex-capital-solutions/2.jpg")} className="img" blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" />
                   </div>
                 </div>
 
               </div>
 
             </div>
-            <div className="col-md-6">
-              <div className="row">
-                <div className="col-lg-12  content">
-                  <span className='section-heading' >World Leading Project Management Company.</span>
-                  <h1>Our Story Is One Faith</h1>
-                  <p>
-                    With compassion, and a commitment
-                    to serving others. Founded on
-                    Christian principles, we strive to be a
-                    beacon of hope in the field of
-                    healthcare. beacon of hope in the field of
-                    healthcare.
-                  </p>
+            <div className="col-md-6 content">
+              <span className='section-heading' >With a commitment to excellence and integrity</span>
+              <h2>We stand at the forefront of innovation.</h2>
+              <p>
+                Our team of seasoned professionals brings together diverse skill sets and deep industry knowledge to offer tailored solutions that address the unique needs of our clients.
+              </p>
 
-                  <Link to="/about-us"><PlayCircleIcon fontSize='large' /> See How It Works</Link>
-                </div>
-
-              </div>
+              <Link to="/company"><PlayCircleIcon fontSize='large' /> See How It Works</Link>
             </div>
           </div>
 
@@ -134,7 +103,7 @@ const Home = ({ scrolled }) => {
 
       {/* <section className="welcome mx-auto">
         <div className="container-fluid">
-          <OptimizedImage src={require("../imgs/grace-medical/finance.jpg")} style={{ height: 250, width: 200 }} alt="hero-img" blurhash="LcLEHB~pIUIU_4xvt7j@E2NHRjof" />
+          <OptimizedImage src={require("../imgs/quantum-ex-capital-solutions/finance.jpg")} style={{ height: 250, width: 200 }} alt="hero-img" blurhash="LcLEHB~pIUIU_4xvt7j@E2NHRjof" />
 
           <h1 ><span>Welcome To</span>Grace Medical Outreach International</h1>
           <p>
@@ -155,8 +124,12 @@ const Home = ({ scrolled }) => {
         <div className="container-fluid">
           <div className="row">
             <div className="col col-md-4 left">
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero animi,</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero animi, voluptatum nostrum dolore rem nihil minima aperiam modi excepturi pariatur placeat</p>
+              <h2>Our vision is to be a trusted partner in driving economic development</h2>
+              <p>
+
+                QuantumEx Capital Solutions Ltd offers expertise in navigating the
+                complex intersection of finance, policy, and environmental science.
+              </p>
               <div className="bottom mt-auto">
                 <span>DESTINY KEFAS</span>
                 <span>CEO, Founder.</span>
@@ -165,24 +138,23 @@ const Home = ({ scrolled }) => {
             <div className="col-md-8">
               <div className="row cards">
                 <div to="" className="col-md-6 home-about-us-card">
-                  <OptimizedImage src={require("../imgs/grace-medical/46.jpg")} className="img" blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" />
+                  <OptimizedImage src={require("../imgs/quantum-ex-capital-solutions/1.jpg")} className="img" blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" />
                   <h6>WHO WE ARE</h6>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut expedita
+                  We are a pioneering Legal, financial and research advisory firm committed to driving sustainable economic development in Nigeria and beyond. 
                   </p>
-                  <Link to="" className='icon'>
+                  <Link to="/company" className='icon'>
                     <ChevronRightRoundedIcon fontSize='medium' /> Learn More
                   </Link>
 
                 </div>
 
                 <div to="" className="col-md-6 home-about-us-card">
-                  <OptimizedImage src={require("../imgs/grace-medical/47.jpg")} className="img" blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" />
-                  <h6>PROJECT MANAGEMENT REDEFINED</h6>
+                  <OptimizedImage src={require("../imgs/quantum-ex-capital-solutions/2.jpg")} className="img" blurhash="LWH.4sD+$%kX~poeNFx]?Ht7WBxu" />
+                  <h6>OUR MISSION</h6>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut expedita consectetur adipisicing elit. Dolorem ut expedita
-                  </p>
-                  <Link to="" className='icon'>
+                  To conduct rigorous comparative assessments of legal frameworks impacting groundwater resources, facilitating informed policy engagement and fostering dialogue on the need for adaptive changes.                   </p>
+                  <Link to="/company" className='icon'>
                     <ChevronRightRoundedIcon fontSize='medium' /> Learn More
                   </Link>
 
@@ -206,14 +178,14 @@ const Home = ({ scrolled }) => {
             <div className="col-md-6 col-xl-4">
               <h2 className='section-heading'>Unmatched Service.<br />Unmatched Excellence.</h2>
             </div>
-            {services.map((service, index) => (
+            {servicesList.map((service, index) => (
               <ServiceCard
                 key={index}
                 service={service}
                 isHovered={index === hoveredIndex}
                 onMouseEnter={() => handleCardHover(index)}
               />
-              ))}
+            ))}
 
             {/* <div className="col-md-6 col-xl-4 service-wrapper">
               <Link to="" className="service">
@@ -284,17 +256,17 @@ const Home = ({ scrolled }) => {
               modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
               className="mySwiper"
             >
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/1.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/3.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/4.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/5.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/6.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/7.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/8.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/9.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/10.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/11.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/grace-medical/slider/12.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/1.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/3.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/4.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/5.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/6.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/7.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/8.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/9.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/10.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/11.JPG')} /></SwiperSlide>
+              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/12.JPG')} /></SwiperSlide>
 
             </Swiper>
             <div className="swiper-custom-pagination"></div>

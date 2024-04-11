@@ -300,9 +300,7 @@ section {
     margin-bottom: 0;
 }
 
-.navbar .dropdown a.nav-link {
-    padding-bottom: 10px;
-}
+
 
 
 
@@ -637,6 +635,7 @@ section {
 .reputation .content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .reputation .section-heading {
@@ -690,6 +689,7 @@ section {
 
 .reputation .header-image .item:first-child {
     margin-left: 20px;
+    margin-top: 20px;
     border-radius: 8px;
     overflow: hidden;
 
@@ -699,7 +699,7 @@ section {
 .reputation .header-image .item:last-child {
     position: absolute;
     left: -20px;
-    top: -45px;
+    top: -20px;
     z-index: -1;
     overflow: hidden;
 
@@ -815,7 +815,7 @@ section {
 
 .about-us .banner {
     margin-bottom: 40px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./imgs/grace-medical/2.JPG");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./imgs/quantum-ex-capital-solutions/2.jpg");
 }
 
 .about-us .row {
@@ -975,7 +975,7 @@ section {
 }
 
 .projects .banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./imgs/grace-medical/33.JPG");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./imgs/quantum-ex-capital-solutions/2.jpg");
     background-position: center center;
 }
 
@@ -1016,7 +1016,7 @@ section {
 /* give */
 
 .give .banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./imgs/grace-medical/4.JPG");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./imgs/quantum-ex-capital-solutions/1.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1048,7 +1048,7 @@ section {
 /* Contact */
 
 .contact-page .banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./imgs/grace-medical/7.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./imgs/quantum-ex-capital-solutions/2.jpg");
     background-position: 50% 50%;
 
 }
@@ -1156,7 +1156,7 @@ footer .link-category a {
 }
 
 footer .link-category a:hover {
-    color: var(--cl--1--);
+    color: var(--cl--9--);
 }
 
 
@@ -1416,16 +1416,12 @@ footer .page-btn:hover {
         width: 90%;
     }
 
-    .navbar .nav-link {
-        padding: 0 3px !important;
-    }
+    
 
     .navbar .navbar-collapse {
         position: static;
         padding-top: 0;
         height: 100%;
-
-
     }
 
 
@@ -1454,7 +1450,6 @@ footer .page-btn:hover {
 
     .navbar .dropdown .nav-item {
         margin-bottom: 0;
-        padding: 10px;
     }
 
     .navbar .dropdown .nav-item:hover {
@@ -1464,6 +1459,10 @@ footer .page-btn:hover {
 
     .navbar .navbar-nav li:hover .dropdown {
         display: block;
+    }
+
+    .navbar .dropdown a.nav-link {
+        padding: 10px;
     }
 
     .navbar .dropdown .nav-item:hover .nav-link {

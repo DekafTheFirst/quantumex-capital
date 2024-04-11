@@ -36,7 +36,7 @@ const Company = () => {
                     </div>
 
                     <div className="col-12 col-md-6">
-                        <img src={require('../imgs/grace-medical/45.JPG')} alt=""/>
+                        <img src={require('../imgs/quantum-ex-capital-solutions/1.jpg')} alt=""/>
                     </div>
                 </div>
                 <div className="row align-items-start">
@@ -100,7 +100,7 @@ const Company = () => {
                         </p>
                     </div>
                     <div className="col-12 col-md-6">
-                        <img src={require('../imgs/grace-medical/20.JPG')} alt=""/>
+                        <img src={require('../imgs/quantum-ex-capital-solutions/2.jpg')} alt=""/>
                     </div>
                 </div>
 
@@ -112,7 +112,7 @@ const Company = () => {
                         </p>
                     </div>
                     <div className="col-12 col-md-6">
-                        <img src={require('../imgs/grace-medical/32.JPG')} alt=""/>
+                        <img src={require('../imgs/quantum-ex-capital-solutions/2.jpg')} alt=""/>
                     </div>
                 </div>
 
@@ -124,7 +124,7 @@ const Company = () => {
                         </p>
                     </div>
                     <div className="col-12 col-md-6">
-                        <img src={require('../imgs/grace-medical/25.JPG')} alt=""/>
+                        <img src={require('../imgs/quantum-ex-capital-solutions/1.jpg')} alt=""/>
                     </div>
                 </div>
 
@@ -139,7 +139,7 @@ const Company = () => {
                         </p>
                     </div>
                     <div className="col-12 col-md-6">
-                        <img src={require('../imgs/grace-medical/27.JPG')} alt=""/>
+                        <img src={require('../imgs/quantum-ex-capital-solutions/2.jpg')} alt=""/>
                     </div>
                 </div>
 
@@ -154,7 +154,7 @@ const Company = () => {
                                 <img className="card-img" src={require('../imgs/people/kefas-jibir.png')} alt="board of directors image"/>
                             </div>
                             <div className="card-body">
-                                <div className="logo"><img src={require("../imgs/grace-medical/chairman.png")} alt="" /></div>
+                                <div className="logo"><img src={require("../imgs/quantum-ex-capital-solutions/chairman.png")} alt="" /></div>
                                 <div className="content">
                                     <span className='name'>Dr Kefas Jibir, MBBS, FWACP</span>
                                     <h5>Chairman</h5>
@@ -178,10 +178,10 @@ const Company = () => {
                         </div>
                         <div className="card">
                             <div className="img-wrapper">
-                                <img className="card-img" src={require('../imgs/grace-medical/person.png')} alt="board of directors image"/>
+                                <img className="card-img" src={require('../imgs/quantum-ex-capital-solutions/person.png')} alt="board of directors image"/>
                             </div>
                             <div className="card-body">
-                                <div className="logo"><img src={require("../imgs/grace-medical/secretary.png")} alt="" /></div>
+                                <div className="logo"><img src={require("../imgs/quantum-ex-capital-solutions/secretary.png")} alt="" /></div>
                                 <div className="content">
                                     <span className='name'>Pharm Emmanuel Adaji</span>
                                     <h5>General Secretary</h5>
@@ -205,10 +205,10 @@ const Company = () => {
                         </div>
                         <div className="card">
                             <div className="img-wrapper">
-                                <img className="card-img" src={require('../imgs/grace-medical/person.png')} alt="board of directors image"/>
+                                <img className="card-img" src={require('../imgs/quantum-ex-capital-solutions/person.png')} alt="board of directors image"/>
                             </div>
                             <div className="card-body">
-                                <div className="logo"><img src={require("../imgs/grace-medical/drugs.png")} alt="" /></div>
+                                <div className="logo"><img src={require("../imgs/quantum-ex-capital-solutions/drugs.png")} alt="" /></div>
                                 <div className="content">
                                     <span className='name'>Pharm Toyin Bada</span>
                                     <h5>HOD Pharmacy/Treasurer</h5>
@@ -232,10 +232,10 @@ const Company = () => {
                         </div>
                         <div className="card">
                             <div className="img-wrapper">
-                                <img className="card-img" src={require('../imgs/grace-medical/person.png')} alt="board of directors image"/>
+                                <img className="card-img" src={require('../imgs/quantum-ex-capital-solutions/person.png')} alt="board of directors image"/>
                             </div>
                             <div className="card-body">
-                                <div className="logo"><img src={require("../imgs/grace-medical/counseling.png")} alt="" /></div>
+                                <div className="logo"><img src={require("../imgs/quantum-ex-capital-solutions/counseling.png")} alt="" /></div>
                                 <div className="content">
                                     <span className='name'>Pst Davidson Iheanyichukwu</span>
                                     <h5>HOD Counselling</h5>
@@ -261,10 +261,10 @@ const Company = () => {
 
                         <div className="card">
                             <div className="img-wrapper">
-                                <img className="card-img" src={require('../imgs/grace-medical/person.png')} alt="board of directors image"/>
+                                <img className="card-img" src={require('../imgs/quantum-ex-capital-solutions/person.png')} alt="board of directors image"/>
                             </div>
                             <div className="card-body">
-                                <div className="logo"><img src={require("../imgs/grace-medical/prayer.png")} alt="" /></div>
+                                <div className="logo"><img src={require("../imgs/quantum-ex-capital-solutions/prayer.png")} alt="" /></div>
                                 <div className="content">
                                     <span className='name'>Pst Tukura James</span>
                                     <h5>HOD Prayers</h5>
@@ -289,10 +289,10 @@ const Company = () => {
 
                         <div className="card">
                             <div className="img-wrapper">
-                                <img className="card-img" src={require('../imgs/grace-medical/person.png')} alt="board of directors image"/>
+                                <img className="card-img" src={require('../imgs/quantum-ex-capital-solutions/person.png')} alt="board of directors image"/>
                             </div>
                             <div className="card-body">
-                                <div className="logo"><img src={require("../imgs/grace-medical/it-department.png")} alt="" /></div>
+                                <div className="logo"><img src={require("../imgs/quantum-ex-capital-solutions/it-department.png")} alt="" /></div>
                                 <div className="content">
                                     <span className='name'>Engr Peter Echiye(MCPN)</span>
                                     <h5>HOD Media/IT/Public Relation</h5>
@@ -317,10 +317,10 @@ const Company = () => {
 
                         <div className="card">
                             <div className="img-wrapper">
-                                <img className="card-img" src={require('../imgs/grace-medical/person.png')} alt="board of directors image"/>
+                                <img className="card-img" src={require('../imgs/quantum-ex-capital-solutions/person.png')} alt="board of directors image"/>
                             </div>
                             <div className="card-body">
-                                <div className="logo"><img src={require("../imgs/grace-medical/planning.png")} alt="" /></div>
+                                <div className="logo"><img src={require("../imgs/quantum-ex-capital-solutions/planning.png")} alt="" /></div>
                                 <div className="content">
                                     <span className='name'>Moses Ogebe</span>
                                     <h5>HOD Planning/Mobilization</h5>
@@ -345,10 +345,10 @@ const Company = () => {
 
                         <div className="card">
                             <div className="img-wrapper">
-                                <img className="card-img" src={require('../imgs/grace-medical/person.png')} alt="board of directors image"/>
+                                <img className="card-img" src={require('../imgs/quantum-ex-capital-solutions/person.png')} alt="board of directors image"/>
                             </div>
                             <div className="card-body">
-                                <div className="logo"><img src={require("../imgs/grace-medical/legal.png")} alt="" /></div>
+                                <div className="logo"><img src={require("../imgs/quantum-ex-capital-solutions/legal.png")} alt="" /></div>
                                 <div className="content">
                                     <span className='name'>Bar Emeka Alioha</span>
                                     <h5>Legal Adviser</h5>
@@ -381,13 +381,7 @@ const Company = () => {
                 <h2 className='text-center'>Meet The Team</h2>
                 
                 <div className="row justify-content-center g-5">
-                    <img src={require('../imgs/grace-medical/45.JPG')} alt="" />
-
-                    <img src={require('../imgs/grace-medical/19.jpg')} alt="" />
-
-                    <img src={require('../imgs/grace-medical/48.jpg')} alt="" />
-
-
+                    
                 </div>
 
             </section>
