@@ -833,6 +833,12 @@ section {
     flex-direction: row-reverse;
 }
 
+.about-us .accordion-item .accordion-list{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 10px 0; 
+}
 
 
 
@@ -858,6 +864,7 @@ section {
 }
 
 .about-us .accordion-button:not(.collapsed) {
+    color: var(--cl--6--);
     background-color: var(--cl--3--);
     -webkit-transition: 0.3s ease-in-out;
 }

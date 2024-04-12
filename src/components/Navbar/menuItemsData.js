@@ -1,3 +1,5 @@
+import { servicesList } from "../../Pages/Services/servicesList";
+
 export const menuItemsData = [
     {
         title: 'Home',
@@ -10,26 +12,44 @@ export const menuItemsData = [
     {
         title: 'Services',
         url: '/services',
-        submenu: [
-            {
-                title: 'Project Management',
-                url: 'project-management'
-            },
-            {
-                title: 'Project Timing',
-                url: 'project-managemen'
-            },
-            {
-                title: 'Public Private',
-                url: 'project-managemen'
-            },
-        ]
-    },
-    {
-        title: 'Projects',
-        url: '/projects',
         
+        submenu: servicesList.map((service)=> ({
+            title: service.title,
+            url: service.slug
+        }) )
     },
+    // {
+    //     title: 'Projects',
+    //     url: '/projects',
+    //     submenu: [
+    //         {
+    //             title: 'Project Management',
+    //             url: 'project-management',
+    //             submenu: [
+    //                 {
+    //                     title: 'Project Management',
+    //                     url: 'project-management'
+    //                 },
+    //                 {
+    //                     title: 'Project Timing',
+    //                     url: 'project-managemen'
+    //                 },
+    //                 {
+    //                     title: 'Public Private',
+    //                     url: 'project-managemen'
+    //                 },
+    //             ]
+    //         },
+    //         {
+    //             title: 'Project Timing',
+    //             url: 'project-managemen'
+    //         },
+    //         {
+    //             title: 'Public Private',
+    //             url: 'project-managemen'
+    //         },
+    //     ]
+    // },
     
 
 

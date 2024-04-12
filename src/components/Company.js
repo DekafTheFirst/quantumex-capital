@@ -1,4 +1,4 @@
-import React, {  } from 'react'
+import React, { } from 'react'
 import { Link } from 'react-router-dom'
 
 
@@ -22,28 +22,21 @@ const Company = () => {
             <section className="container-fluid">
                 <div className="row">
                     <div className="col-12 col-md-6">
-                        <h2 className='heading'>Our Story</h2>
+                        <h2 className='heading'>About Us</h2>
                         <p className='body-text'>
-                            Established in 2018, Grace Medical
-                            Outreach Intl was born from a shared
-                            belief in the healing power of grace and
-                            the transformative love of Jesus Christ.
-                            What started as a collective vision has
-                            grown into a steadfast commitment to
-                            combining medical care with God's grace,
-                            reaching far and wide to uplift lives.
+                            QuantumEx Capital Solutions Ltd (QEX) is a multidisciplinary consulting/research firm whose primary goal is to improve and drive data-driven solutions, providing cutting-edge innovation through our team of seasoned professionals and industry practitioners. We specialize in fashioning global best practices for local and international multilateral agencies for development in Nigeria and beyond.
                         </p>
                     </div>
 
                     <div className="col-12 col-md-6">
-                        <img src={require('../imgs/quantum-ex-capital-solutions/1.jpg')} alt=""/>
+                        <img src={require('../imgs/quantum-ex-capital-solutions/1.jpg')} alt="" />
                     </div>
                 </div>
                 <div className="row align-items-start">
                     <div className="col-12 col-md-6">
                         <h2 className='heading'>Our Mission</h2>
                         <p className='body-text'>
-                            At the core of Grace Medical Outreach Intl is a dedication to providing holistic and compassionate healthcare. Our mission extends beyond treating physical ailments, embracing the emotional and spiritual dimensions of health. Compassion, excellence, faith, and integrity are the pillars that guide our every endeavor.
+                            At QuantumEx Capital Solutions Ltd, our mission is to be a trusted partner in driving economic development and fostering environmental resilience in the regions we serve. Through rigorous analysis, strategic insights, and data-driven solutions, we empower governments, businesses, and communities to make informed decisions that balance economic opportunities with environmental conservation.
                         </p>
                     </div>
                     <div className="col-12 col-md-6 justify-content-start">
@@ -51,13 +44,18 @@ const Company = () => {
                             <div className="accordion-item">
                                 <h2 className="accordion-header">
                                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        OUR VALUES
+                                        CORE VALUES
                                     </button>
                                 </h2>
                                 <div id="flush-collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div className="accordion-body">Showing compassion to the less previledged through medical care and sharing the love of Christ.</div>
+                                    <ul className='accordion-list'>
+                                        <li><strong>Commitment to Sustainability:</strong> We are deeply committed to environmental sustainability and the protection of natural resources.</li>
+                                        <li><strong>Innovative Thinking: </strong> We embrace innovative thinking to propose creative solutions to complex environmental challenges.</li>
+                                        <li><strong>Collaboration:</strong>  We believe in the power of collaboration and dialogue to drive positive change and foster sustainable development.</li>
+                                    </ul>
                                 </div>
                             </div>
+
                             <div className="accordion-item">
                                 <h2 className="accordion-header">
                                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -66,7 +64,7 @@ const Company = () => {
                                 </h2>
                                 <div id="flush-collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                     <div className="accordion-body">
-                                        <p>Reaching the less priviledged with the love of God through Medical and other social amenities.</p>
+                                        <p>Our vision is to lead the way in providing innovative, data-driven solutions that address the evolving challenges of sustainable development. We strive to be at the forefront of driving positive change, both locally and internationally, by leveraging our expertise and experience to create tangible and lasting impact.</p>
                                     </div>
                                 </div>
                             </div>
@@ -77,72 +75,23 @@ const Company = () => {
                                     </button>
                                 </h2>
                                 <div id="flush-collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div className="accordion-body">
-                                        <ul>
-                                            <li>To provide free comprehensive health care to citizens in our communities, especially the less priviledged.</li>
-                                            <li>To initiate and support free community development projects such as, water, electricity, health centeres schools, etc.</li>
-                                            <li>To engage in rural evangelism and other spiritual support programmes based on the bible.</li>
-                                            <li>To promote advocacy against communicable and non-communicable diseases such as HIV-AIDS, Cholera, Measles, Meningitis, Lassa Fever, Ebola, Tuberculosis, Hepatitis, Malaria, Drug Abuse, Hypertension, Diabetes, Sickle Cell Disease, in line with sustainable development goals.</li>
-
-                                        </ul>
-                                    </div>
+                                    <ul className='accordion-list'>
+                                        <li>Conduct comprehensive comparative assessments of legal frameworks impacting groundwater resources in Nigeria and beyond.</li>
+                                        <li>Facilitate informed policy engagement with stakeholders to advocate for adaptive changes in environmental conservation and sustainable resource management.</li>
+                                        <li>Provide innovative financial consulting services to empower governments, businesses, and communities in making informed decisions that promote economic growth while safeguarding natural resources.</li>
+                                        <li>Foster collaboration and dialogue among stakeholders to shape a future where economic development thrives in harmony with environmental conservation.</li>
+                                        <li>Advocate for the integration of traditional knowledge and community participation in groundwater management efforts to promote resilience and inclusivity in decision-making processes.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="row">
-                    <div className="col-12 col-md-6">
-                        <h2 className='heading'>Holistic Approach to Healthcare</h2>
-                        <p className='body-text'>
-                            What makes us unique is our holistic approach to healthcare. Recognizing the inherent worth of each individual, our team of medical professionals, chaplains, and support staff collaborates to offer comprehensive medical projects, spiritual support, and emotional healing.
-                        </p>
-                    </div>
-                    <div className="col-12 col-md-6">
-                        <img src={require('../imgs/quantum-ex-capital-solutions/2.jpg')} alt=""/>
-                    </div>
-                </div>
-
-                <div className="row">
-                    <div className="col-12 col-md-6">
-                        <h2 className='heading'>Serving Beyond Boundaries</h2>
-                        <p className='body-text'>
-                            From local communities to international outreach programs, Grace Medical Outreach Intl extends its healing touch to diverse corners of the world. Through medical clinics, health education initiatives, and responses to global health crises, we strive to be the hands and feet of Jesus, reaching those who need it most.
-                        </p>
-                    </div>
-                    <div className="col-12 col-md-6">
-                        <img src={require('../imgs/quantum-ex-capital-solutions/2.jpg')} alt=""/>
-                    </div>
-                </div>
-
-                <div className="row">
-                    <div className="col-12 col-md-6">
-                        <h2 className='heading'>Christian Values in Action</h2>
-                        <p className='body-text'>
-                            Grace Medical Outreach Intl is more than an organization; it's a living embodiment of Christian values. Our chaplains play an integral role, providing spiritual support, counseling, and prayer to those seeking solace and understanding amidst their healthcare journey.
-                        </p>
-                    </div>
-                    <div className="col-12 col-md-6">
-                        <img src={require('../imgs/quantum-ex-capital-solutions/1.jpg')} alt=""/>
-                    </div>
-                </div>
-
-                <div className="row">
-                    <div className="col-12 col-md-6">
-                        <h2 className='heading'>Join Us in the Journey</h2>
-                        <p className='body-text'>
-                            As Grace Medical Outreach Intl continues to grow, we invite you to be a part of this meaningful journey. Whether you are a healthcare professional eager to make a difference, a supporter looking to contribute, or an individual in need of care, our organization is a welcoming community where everyone is valued.
-                        </p>
-                        <p className='body-text'>
-                            Thank you for considering Grace Medical Outreach Intl as a partner in health, healing, and faith. Together, let's extend God's grace through our hands, hearts, and the transformative power of compassionate healthcare.
-                        </p>
-                    </div>
-                    <div className="col-12 col-md-6">
-                        <img src={require('../imgs/quantum-ex-capital-solutions/2.jpg')} alt=""/>
-                    </div>
-                </div>
-
+                <h2 className='heading text-center'>Contact Us</h2>
+                <p className='body-text'>
+                    Ready to collaborate with QuantumEx Capital Solutions Ltd to achieve your sustainability goals? <Link to='/contact'>Reach out</Link> to us today to discuss how we can support your organization's objectives and make a lasting impact in your community.
+                </p>
 
                 {/* <div className="row our-team">
                 <h6 className='section-heading'>Our Team</h6>
@@ -378,11 +327,11 @@ const Company = () => {
 
                                 
             </div> */}
-                <h2 className='text-center'>Meet The Team</h2>
-                
+                {/* <h2 className='text-center'>Meet The Team</h2>
+
                 <div className="row justify-content-center g-5">
-                    
-                </div>
+
+                </div> */}
 
             </section>
         </div>

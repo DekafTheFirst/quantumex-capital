@@ -5,7 +5,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
 import ServiceCard from './ServiceCard/ServiceCard';
-import { servicesList } from '../Pages/Services/Services';
+import { servicesList } from '../Pages/Services/servicesList';
 
 // import required modules
 // import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
