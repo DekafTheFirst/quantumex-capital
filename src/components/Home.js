@@ -101,23 +101,7 @@ const Home = ({ scrolled }) => {
         </div>
       </section>
 
-      {/* <section className="welcome mx-auto">
-        <div className="container-fluid">
-          <OptimizedImage src={require("../imgs/quantum-ex-capital-solutions/finance.jpg")} style={{ height: 250, width: 200 }} alt="hero-img" blurhash="LcLEHB~pIUIU_4xvt7j@E2NHRjof" />
-
-          <h1 ><span>Welcome To</span>Grace Medical Outreach International</h1>
-          <p>
-            we believe in the transformative
-            power of compassionate healthcare
-            rooted in Christian values. Our mission
-            is to extend healing hands to those in
-            need, providing not just medical care
-            but also the love and hope that come
-            from our faith.
-          </p>
-        </div>
-
-      </section> */}
+      
 
 
       <section className='home-about-us'>
