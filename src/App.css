@@ -329,7 +329,6 @@ section {
 }
 
 .navbar .nav-item-special {
-    padding: 3px 20px;
     border: 2px solid var(--cl--2--);
     border-radius: 5px;
     align-items: center;
@@ -343,6 +342,8 @@ section {
 
 .navbar .nav-item-special .nav-link {
     color: var(--cl--2--);
+    padding: 3px 20px;
+
 
 
 }
@@ -1090,7 +1091,7 @@ form select,
 form textarea {
     padding: 1em 0.5em;
     width: 100%;
-    border: 1px solid var(--cl--4--);
+    border: 1px solid var(--cl-10--);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;

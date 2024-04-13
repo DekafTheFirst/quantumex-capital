@@ -73,7 +73,7 @@ const Footer = () => {
                     </div>
 
                     <div className="copy-right mt-3">
-                        <p>Grace Medical Outreach Intl. &copy; 2023, All RIghts Reserved.</p>
+                        <p>QuantumEx Capital Solutions &copy; 2023, All RIghts Reserved.</p>
                     </div>
 
                 </div>

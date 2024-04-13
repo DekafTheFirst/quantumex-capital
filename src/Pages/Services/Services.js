@@ -1,18 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom';
 
-import { useParams, useNavigate } from 'react-router-dom';
-import { ReactComponent as ProjectManagementIcon } from '../../imgs/quantum-ex-capital-solutions/project-management.svg'
+import { useParams } from 'react-router-dom';
 
 
-import ProjectManagement from './ProjectManagement';
 
 import './Services.css'
 import { servicesList } from './servicesList';
 
 
 
-const images = [];
 const Services = () => {
     const { slug } = useParams();
     const currentService = servicesList.find((service) => service.slug === slug).element
@@ -26,7 +23,7 @@ const Services = () => {
                     <nav aria-label="breadcrumb">
                         <ol className="breadcrumb justify-content-center">
                             <li className="breadcrumb-item"><Link to="/">Home</Link></li>
-                            <li className="breadcrumb-item"><Link to="#">servicesList</Link></li>
+                            <li className="breadcrumb-item"><Link to="#">Services</Link></li>
                             <li className="breadcrumb-item active" aria-current="page">{servicesList.find((service => service.slug === slug)).title}</li>
                         </ol>
                     </nav>

@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import Home from '../Home';
-import PlaceIcon from '@mui/icons-material/Place';
-import { Email } from '@mui/icons-material';
 import { menuItemsData } from './menuItemsData';
 import MenuItem from './MenuItem';
 // const routes = [
@@ -11,7 +8,6 @@ import MenuItem from './MenuItem';
 
 
 const Navbar = ({ scrolled }) => {
-  const [dropdownClicked, setDropDownClicked] = useState(false);
   const [show, setShow] = useState(false);
   const location = useLocation();
   const checkIfSubmenuIsActive = (menu) => { 

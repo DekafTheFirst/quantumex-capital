@@ -6,7 +6,6 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import NoPage from './components/NoPage';
 import ScrollToTop from './components/ScrollToTop';
-import Give from './components/Give';
 import Company from './components/Company';
 import Projects from './components/Projects';
 import { useEffect, useState } from 'react';
@@ -44,7 +43,7 @@ function App() {
     <div className='app'>
       <HashRouter>
         <Navbar scrolled={scrolled}/>
-        {/* <ScrollToTop /> */}
+        <ScrollToTop />
         <div id="content">
           <Routes>
             <Route path="/" element={<Home scrolled={scrolled}/>} />
@@ -52,7 +51,6 @@ function App() {
             <Route path="/services/:slug" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/give" element={<Give />} />
 
             <Route path="*" element={<NoPage />} />
           </Routes>

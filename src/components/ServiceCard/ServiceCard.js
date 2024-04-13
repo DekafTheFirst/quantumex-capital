@@ -1,7 +1,6 @@
 import React from 'react'
 import './ServiceCard.css'
 import { Link } from 'react-router-dom'
-import { ReactComponent as ProjectManagement } from '../../imgs/quantum-ex-capital-solutions/project-management.svg'
 
 const ServiceCard = ({ service, isHovered, onMouseEnter }) => {
     return (

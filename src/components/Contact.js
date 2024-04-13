@@ -1,12 +1,11 @@
 import React, { useRef } from 'react'
-import emailjs from "@emailjs/browser"
 import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
 
-    const navigate = useNavigate()
+
     const showToastMessage = () => {
         toast.success("Sent Successfully !", {
           position: toast.POSITION.TOP_RIGHT,
@@ -29,7 +28,9 @@ const Contact = () => {
 
     const form = useRef();
     const sendEmail = async (e) => {
-        navigate("/");
+        e.preventDefault()
+
+        showToastMessage()
     };
 
     
@@ -57,13 +58,14 @@ const Contact = () => {
                     <div className="form row">
                         <input type="text" name="user_name" id="" placeholder="Your Name" />
                         <input type="email" name="user_email" id="" placeholder="Email" />
-                        <select name="reason" id="">
+                        <input type="text" name="reason" id="" placeholder="Reason For Contacting" />
+                        {/* <select name="reason" id="">
                             <option value="An Unknown Reason">Reason For Contacting*</option>
                             <option value="Construction">I want to become a member</option>
                             <option value="Consultation">I Would Like to make a donation</option>
                             <option value="Building Materials">I want to know more about GMOI</option>
                             <option value="Immigration Services">General Inquries</option>
-                        </select>
+                        </select> */}
                         <input type="tel" name="phone_number" id="" placeholder="Phone" />
                     </div>
                     <div className='row'>

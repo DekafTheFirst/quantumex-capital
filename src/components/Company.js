@@ -1,5 +1,6 @@
 import React, { } from 'react'
 import { Link } from 'react-router-dom'
+import OptimizedImage from './OptimizedImage/OptimizedImage'
 
 
 const Company = () => {
@@ -29,7 +30,7 @@ const Company = () => {
                     </div>
 
                     <div className="col-12 col-md-6">
-                        <img src={require('../imgs/quantum-ex-capital-solutions/1.jpg')} alt="" />
+                        <OptimizedImage src={require('../imgs/quantum-ex-capital-solutions/4.jpg')} style={{height:"100%"}}/>
                     </div>
                 </div>
                 <div className="row align-items-start">
