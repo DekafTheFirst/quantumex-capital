@@ -93,7 +93,7 @@ const Home = ({ scrolled }) => {
                 Our team of seasoned professionals brings together diverse skill sets and deep industry knowledge to offer tailored solutions that address the unique needs of our clients.
               </p>
 
-              <Link to="/company"><PlayCircleIcon fontSize='large' /> See How It Works</Link>
+              <Link to="/company"><PlayCircleIcon fontSize='large' /> See How It Works.</Link>
             </div>
           </div>
 
