@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dce5d4da.css",
+    "main.js": "/static/js/main.bac36e7e.js",
+    "static/media/finance.jpg": "/static/media/finance.5c2df15b3418662bfb2f.jpg",
+    "static/media/3.jpg": "/static/media/3.dc52d0e2319df0473141.jpg",
+    "static/media/logo.png": "/static/media/logo.fbd978ab0fb5451db6a6.png",
+    "static/media/4.jpg": "/static/media/4.bf9e6e0a0529517d2128.jpg",
+    "static/media/2.jpg": "/static/media/2.b739805d63d63b5ff9f2.jpg",
+    "static/media/1.jpg": "/static/media/1.ef0d64de39abcb591e62.jpg",
+    "static/media/instagram.png": "/static/media/instagram.1792ff30fb032c94685c.png",
+    "static/media/twitter.png": "/static/media/twitter.c6e48e60f856cb822273.png",
+    "static/media/facebook.png": "/static/media/facebook.13d509b1b48ee6f8c1da.png",
+    "static/media/linkedin.png": "/static/media/linkedin.6892b3ae328c7a1e055f.png",
+    "index.html": "/index.html",
+    "main.dce5d4da.css.map": "/static/css/main.dce5d4da.css.map",
+    "main.bac36e7e.js.map": "/static/js/main.bac36e7e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dce5d4da.css",
+    "static/js/main.bac36e7e.js"
+  ]
+}
