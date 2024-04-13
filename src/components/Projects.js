@@ -1,19 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 const Projects = () => {
-  const projects = [
-    { title: 'Mission to Igumale, Ado LGA, Benue State', date: 'Sept, 2022', desc: 'We carried out a three-day outreach mission to Igumale community and we provided medical care to the inhabitants and also performed both medical and dental surgeries.', img: require('../imgs/quantum-ex-capital-solutions/2.jpg') },
-    { title: 'Mission to Tukuba Village, Kuje Area Council, F.C.T, Abuja.', date: 'March 30, 2019', desc: 'From local communities to international outreach programs, Grace Medical Outreach Intl extends its healing touch to diverse corners of', img: require('../imgs/quantum-ex-capital-solutions/1.jpg') },
-    { title: 'Mission to Iyala Community, Kogi State.', date: 'March 27, 2021', desc: 'From local communities to international outreach programs, Grace Medical Outreach Intl extends its healing touch to diverse corners of', img: require('../imgs/quantum-ex-capital-solutions/2.jpg') },
-    { title: 'Mission to Apo, F.C.T, Abuja', date: 'October 23, 2021', desc: 'From local communities to international outreach programs, Grace Medical Outreach Intl extends its healing touch to diverse corners of', img: require('../imgs/quantum-ex-capital-solutions/1.jpg') },
-    { title: 'Mission to KWALI, ABUJA.', date: 'October 23, 2021', desc: 'G.M.O.I (GRACE MEDICAL OUTREACH INTL) IN   COLLABORATION WITH B.I.F.L.D (BAOBAB INITIATIVE FOR LIFE &  DEVELOPMENT )', img: require('../imgs/quantum-ex-capital-solutions/2.jpg') },
-
-  ]
+  
 
   return (
     <div className='page projects'>
-      <div className='banner'>
+      {/* <div className='banner'>
         <div className="banner-heading">
           <h1>Services</h1>
           <nav aria-label="breadcrumb">
@@ -44,7 +36,7 @@ const Projects = () => {
 
           </div>
         ))}
-      </section>
+      </section> */}
     </div>
   )
 }

@@ -7,9 +7,6 @@ import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
 import ServiceCard from './ServiceCard/ServiceCard';
 import { servicesList } from '../Pages/Services/servicesList';
 
-// import required modules
-// import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
-// import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 
@@ -171,94 +168,10 @@ const Home = ({ scrolled }) => {
               />
             ))}
 
-            {/* <div className="col-md-6 col-xl-4 service-wrapper">
-              <Link to="" className="service">
-                <ProjectManagement className='icon' />
-                <h6 className='title'>Project Management</h6>
-                <p className='card-text'>Our medical projects go beyond treating physical ailments. We approach healthcare holistically. </p>
-                <p className='learn-more'>learn more...</p>
-
-              </Link>
-            </div><div className="col-md-6 col-xl-4 service-wrapper">
-              <Link to="" className="service">
-                <ProjectManagement className='icon' />
-                <h6 className='title'>Project Management</h6>
-                <p className='card-text'>Our medical projects go beyond treating physical ailments. We approach healthcare holistically. </p>
-                <p className='learn-more'>learn more...</p>
-
-              </Link>
-            </div>
-            <div className="col-md-6 col-xl-4 service-wrapper">
-              <Link to="" className="service">
-                <ProjectManagement className='icon' />
-                <h6 className='title'>Project Management</h6>
-                <p className='card-text'>Our medical projects go beyond treating physical ailments. We approach healthcare holistically. </p>
-                <p className='learn-more'>learn more...</p>
-
-              </Link>
-            </div>
-            <div className="col-md-6 col-xl-4 service-wrapper">
-              <Link to="" className="service">
-                <ProjectManagement className='icon' />
-                <h6 className='title'>Project Management</h6>
-                <p className='card-text'>Our medical projects go beyond treating physical ailments. We approach healthcare holistically. </p>
-                <p className='learn-more'>learn more...</p>
-
-              </Link>
-            </div> */}
+            
           </div>
         </div>
       </section>
-
-
-      {/* <section className='image-slider'>
-        <div className="container-fluid">
-          <div className="" onMouseEnter={() => swiperRef.current.swiper.autoplay.stop()} onMouseLeave={() => swiperRef.current.swiper.autoplay.start()}>
-            <Swiper
-              ref={swiperRef}
-              cssMode={true}
-              navigation={true}
-              pagination={{ el: ".swiper-custom-pagination", clickable: true }}
-              mousewheel={true}
-              keyboard={true}
-              autoplay={{
-                delay: 2000,
-                disableOnInteraction: false,
-
-              }}
-              breakpoints={{
-                640: {
-                  width: 640,
-                  slidesPerView: 1,
-                },
-                768: {
-                  width: 768,
-                  slidesPerView: 2,
-                },
-              }}
-
-              modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
-              className="mySwiper"
-            >
-              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/1.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/3.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/4.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/5.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/6.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/7.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/8.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/9.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/10.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/11.JPG')} /></SwiperSlide>
-              <SwiperSlide><img src={require('../imgs/quantum-ex-capital-solutions/slider/12.JPG')} /></SwiperSlide>
-
-            </Swiper>
-            <div className="swiper-custom-pagination"></div>
-          </div>
-        </div>
-
-
-      </section> */}
     </div>
   )
 }

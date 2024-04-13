@@ -11,25 +11,26 @@ const Footer = () => {
                     <div className="col-md-6 col-lg-7">
                         <div className="row links">
                             <div className="link-category col-6 col-lg-4">
-                                <h5>Organization</h5>
-                                <Link href="./about-us">About Us</Link>
-                                <Link href="./about-us">Faith Statement</Link>
-                                <Link href="./about-us">Contact Us</Link>
+                                <h5>Company</h5>
+                                <Link to="/company">About Us</Link>
+                                <Link to="/company">Mission</Link>
+                                <Link to="/company">Contact Us</Link>
                             </div>
                             <div className="link-category col-6 col-lg-4">
                                 <h5>Services</h5>
-                                <Link href="./about-us">Medical Outreach</Link>
-                                <Link href="./about-us">Medical Care</Link>
-                                <Link href="./about-us">Spiritual Counseling</Link>
+                                <Link to="/services/legal-advisory-and-policy-development">Legal Advisory</Link>
+                                <Link to="/services/financial-consulting-and-investment-advisory">Financial Consulting</Link>
+                                <Link to="/services/environmental-management-and-sustainability-solutions">Environmental Management</Link>
+                                <Link to="/services/public-private-partnerships">Public Private Partnerships</Link>
+                                <Link to="/services/project-management">Project Management</Link>
                             </div>
                             <div className="link-category col-6 col-lg-4">
                                 <h5>Contact</h5>
-                                <Link href="./about-us">Home</Link>
-                                <Link href="./about-us">Join Us</Link>
-                                <Link href="./about-us">Contact</Link>
+                                <Link to="/">Home</Link>
+                                <Link to="/company">Contact</Link>
                             </div>
                             <div className="link-category col-6 col-lg-4 logo-col">
-                            <img src={require("../imgs/logo.png")} alt="logo-underlay" className="logo" />
+                                <img src={require("../imgs/logo.png")} alt="logo-underlay" className="logo" />
 
                             </div>
                         </div>
@@ -65,9 +66,9 @@ const Footer = () => {
 
 
                         <div className="company-info">
-                            <div><span>Mobile:</span> <Link to="tel:+2348033976703">+2348033976703</Link></div>
-                            <div><span>Email:</span> <Link to="mailto:gracemedicaloutreachintl@gmail.com">gracemedicaloutreachintl@gmail.com</Link></div>
-                            <div><span>Address:</span> <p>PLOT 132, INDEPENDENCE AVENUE, CENTRAL BUSINESS DISTRICT, GARKI, ABUJA.</p></div>
+                            <div><span>Mobile:</span> <Link to="tel:+2348039490323">+2348039490323</Link></div>
+                            <div><span>Email:</span> <Link to="mailto:info@quantumexcapital.com">info@quantumexcapital.com</Link></div>
+                            <div><span>Address:</span> <p>Address: Suite 9, Edo House,  5th Floor, Ralph Shodeinde Street,  Central Business District, Abuja</p></div>
 
                         </div>
                     </div>
