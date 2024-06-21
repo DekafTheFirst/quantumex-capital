@@ -112,7 +112,7 @@ const Home = ({ scrolled }) => {
                 complex intersection of finance, policy, and environmental science.
               </p>
               <div className="bottom mt-auto">
-                <span>DESTINY KEFAS</span>
+                <span>FEMI PAT-NATSON</span>
                 <span>CEO, Founder.</span>
               </div>
             </div>
